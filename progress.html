@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Progress — Grade9 v4.0 Alpha Preview</title>
+    <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div>
+                <span class="brand-tag">Grade9 v4.0 · Synthetic Alpha Preview</span>
+                <h1 class="brand-title">Local Session Progress</h1>
+            </div>
+            <nav class="top-nav" aria-label="Main Navigation">
+                <a href="index.html">Home</a>
+                <a href="physics-wpe.html">Physics: WPE Pilot</a>
+                <a href="practice.html">Interactive Practice</a>
+                <a href="progress.html" class="active" aria-current="page">Session Progress</a>
+                <a href="alpha-board.html">Alpha Roadmap</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumb" aria-label="Breadcrumbs">
+        <a href="index.html">Home</a> &gt; <span>Session Progress</span>
+    </div>
+
+    <main>
+        <div class="banner-disclosure" role="region" aria-label="Academic and Technical Disclaimer">
+            <strong>SYNTHETIC ALPHA PREVIEW — Academic admission: 0. Official keys, figures, adapter qualification and student release remain pending.</strong>
+            PUBLIC DEMO PREVIEW · DEMO ONLY · NOT ACADEMICALLY ADMITTED. All progress tracking in this Alpha demonstration is strictly ephemeral and stored client-side in your local browser session. Zero learner accounts, zero database persistence. No academic approval inferred from software validation.
+        </div>
+
+        <section class="card" id="progress-status-display">
+            <h2>Current Local Session Overview</h2>
+            <p id="progress-summary-text" style="font-weight: 500; color: var(--accent);">
+                Loading local session status...
+            </p>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Module Component</th>
+                            <th>Subject Domain</th>
+                            <th>Cognitive Focus</th>
+                            <th>Session Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Work-Energy Lesson</strong></td>
+                            <td>Physics (Pilot)</td>
+                            <td>Conservative Fields &amp; Wells</td>
+                            <td><span id="status-wpe-lesson" class="badge badge-hold">Not Started</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Energy Practice Trial</strong></td>
+                            <td>Physics (Pilot)</td>
+                            <td>Reasoning Gate &amp; Quadratic Derivation</td>
+                            <td><span id="status-wpe-practice" class="badge badge-hold">Not Started</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Algebraic Invariants</strong></td>
+                            <td>Mathematics</td>
+                            <td>Symmetric Polynomials &amp; Roots</td>
+                            <td><span class="badge badge-hold">Draft / Hold</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Chemical Equilibrium</strong></td>
+                            <td>Chemistry</td>
+                            <td>Dynamic Law of Mass Action</td>
+                            <td><span class="badge badge-hold">Draft / Hold</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="margin-top: 24px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+                <button type="button" id="btn-reset-progress" class="btn btn-secondary">
+                    Reset Local Session Progress
+                </button>
+                <span id="reset-feedback" style="display: none; font-size: 13px; color: #16a34a; font-weight: 600;"></span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Zero-Data Architecture &amp; Privacy Safeguards</h2>
+            <p>
+                In alignment with Grade9 v4.0 architecture, this public Alpha preview adheres to strict learner data privacy standards:
+            </p>
+            <ul style="margin-left: 20px; margin-bottom: 16px; font-size: 14px; line-height: 1.8;">
+                <li><strong>No User Identification:</strong> No student IDs, emails, IP tracking, or user authentication tokens are stored or collected.</li>
+                <li><strong>Ephemeral Session Memory:</strong> Progress indicators live strictly in <code>sessionStorage</code> and are purged immediately when the tab closes or upon clicking "Reset".</li>
+                <li><strong>Air-Gapped Rendering:</strong> Every calculation, slider interaction, and reasoning check runs locally within your browser sandbox.</li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="practice.html" class="btn btn-secondary">&larr; Back to Practice</a>
+                <a href="alpha-board.html" class="btn btn-primary">Inspect Alpha Roadmap &rarr;</a>
+            </div>
+        </section>
+
+        <footer>
+            Grade9 v4.0 · Synthetic Alpha Preview · Public Demo Only · Strictly Non-Production
+        </footer>
+    </main>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Practice — Grade9 v4.0 Alpha Preview</title>
+    <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div>
+                <span class="brand-tag">Grade9 v4.0 · Synthetic Alpha Preview</span>
+                <h1 class="brand-title">Cognitive Practice Trial</h1>
+            </div>
+            <nav class="top-nav" aria-label="Main Navigation">
+                <a href="index.html">Home</a>
+                <a href="physics-wpe.html">Physics: WPE Pilot</a>
+                <a href="practice.html" class="active" aria-current="page">Interactive Practice</a>
+                <a href="progress.html">Session Progress</a>
+                <a href="alpha-board.html">Alpha Roadmap</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumb" aria-label="Breadcrumbs">
+        <a href="index.html">Home</a> &gt; <a href="physics-wpe.html">Physics: WPE Pilot</a> &gt; <span>Interactive Practice</span>
+    </div>
+
+    <main>
+        <div class="banner-disclosure" role="region" aria-label="Academic and Technical Disclaimer">
+            <strong>SYNTHETIC ALPHA PREVIEW — Academic admission: 0. Official keys, figures, adapter qualification and student release remain pending.</strong>
+            PUBLIC DEMO PREVIEW · DEMO ONLY · NOT ACADEMICALLY ADMITTED. This practice question is a synthetic demonstration item illustrating cognitive reasoning gate architecture. Zero authentic examination questions or private keys. No academic approval inferred from software validation.
+        </div>
+
+        <section class="card">
+            <h2>Demonstration Item: Conservative Energy Exchange in a Restoring Field</h2>
+            <p>
+                A particle of mass \(m = 0.50\text{ kg}\) moves along the \(x\)-axis under the action of an ideal conservative spring force \(F(x) = -k x\), where \(k = 50.0\text{ N/m}\). At position \(x = 0.40\text{ m}\), the particle is released from rest (\(v_0 = 0\)). No dissipative forces are present.
+            </p>
+            <p><strong>Physical Target Question:</strong> What is the kinetic energy \(K\) and speed \(v\) of the particle when it passes through the origin \(x = 0\)?</p>
+
+            <div class="math-box">
+                \text{Initial state } (x_0 = 0.40\text{ m}, v_0 = 0) \longrightarrow \text{Final state } (x_1 = 0.00\text{ m}, v_1 = ?)
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Step 1: Select Your Physical Assertion</h2>
+            <div class="practice-options" role="radiogroup" aria-label="Practice Question Options">
+                <button type="button" class="btn-option" data-value="distractor1" role="radio" aria-checked="false">
+                    <span>A) \(K = 2.0\text{ J}\), \(v = 2.0\text{ m/s}\) (Linear velocity scaling)</span>
+                </button>
+                <button type="button" class="btn-option" data-value="correct" role="radio" aria-checked="false">
+                    <span>B) \(K = 4.0\text{ J}\), \(v = 4.0\text{ m/s}\) (Conservative quadratic exchange)</span>
+                </button>
+                <button type="button" class="btn-option" data-value="distractor2" role="radio" aria-checked="false">
+                    <span>C) \(K = 8.0\text{ J}\), \(v = 5.66\text{ m/s}\) (Omission of \(\frac{1}{2}\) coefficient)</span>
+                </button>
+                <button type="button" class="btn-option" data-value="distractor3" role="radio" aria-checked="false">
+                    <span>D) \(K = 0.0\text{ J}\), \(v = 0.0\text{ m/s}\) (Equilibrium force assumption)</span>
+                </button>
+            </div>
+
+            <div style="margin: 16px 0;">
+                <button type="button" id="btn-hint" class="btn btn-secondary">Show Physical Hint</button>
+            </div>
+
+            <div id="panel-hint" class="panel-reveal panel-hint" role="region" aria-label="Physical Hint">
+                <strong>Hint:</strong> Recall that the system is isolated and conservative. Compute the total mechanical energy from the initial release point: \(E = U(x_0) + K(x_0) = \frac{1}{2} k x_0^2 + 0\). At \(x = 0\), all potential energy is converted into kinetic energy: \(K = E - U(0) = \frac{1}{2} m v^2\).
+            </div>
+
+            <div class="reasoning-box">
+                <label for="learner-reasoning" style="display: block; font-weight: 600; margin-bottom: 6px;">
+                    Step 2: State Your Physical Reasoning (Required Gate):
+                </label>
+                <textarea id="learner-reasoning" placeholder="Explain your physical justification here (e.g., state the governing conservation law, how energy partitions, or your step-by-step calculation)..."></textarea>
+                <span style="font-size: 12px; color: var(--text-muted);">
+                    Note: Your reasoning stays private in your browser's local memory and is never transmitted to any external server.
+                </span>
+            </div>
+
+            <div id="validation-message" role="alert" style="display: none;"></div>
+
+            <div style="margin-top: 20px;">
+                <button type="button" id="btn-submit-answer" class="btn btn-primary" style="min-width: 200px;">
+                    Submit &amp; Verify Reasoning
+                </button>
+            </div>
+
+            <div id="panel-solution" class="panel-reveal panel-solution" role="region" aria-label="Worked Physical Derivation">
+                <h3 style="margin-bottom: 8px; font-size: 16px;">Rigorous Worked Derivation</h3>
+                <p><strong>1. Conservation of Mechanical Energy:</strong></p>
+                <div class="math-box">
+                    E_{\text{initial}} = E_{\text{final}} \implies U(x_0) + K(x_0) = U(x_1) + K(x_1)
+                </div>
+                <p><strong>2. Evaluating at Initial State (\(x_0 = 0.40\text{ m}\), \(v_0 = 0\)):</strong></p>
+                <div class="math-box">
+                    U_0 = \frac{1}{2} k x_0^2 = \frac{1}{2} (50.0) (0.40)^2 = 25 \times 0.16 = 4.0\text{ J}
+                </div>
+                <div class="math-box">
+                    K_0 = 0\text{ J} \implies E_{\text{tot}} = 4.0\text{ J}
+                </div>
+                <p><strong>3. Evaluating at Origin (\(x_1 = 0\)):</strong></p>
+                <div class="math-box">
+                    U(0) = \frac{1}{2} (50.0) (0)^2 = 0\text{ J} \implies K_1 = E_{\text{tot}} - U(0) = 4.0\text{ J}
+                </div>
+                <p><strong>4. Solving for Instantaneous Velocity \(v_1\):</strong></p>
+                <div class="math-box">
+                    K_1 = \frac{1}{2} m v_1^2 \implies 4.0 = \frac{1}{2} (0.50) v_1^2 = 0.25 v_1^2 \implies v_1^2 = \frac{4.0}{0.25} = 16.0 \implies v_1 = 4.0\text{ m/s}
+                </div>
+                <p style="margin-top: 10px; font-size: 13px;">
+                    <strong>Cognitive Feedback:</strong> Correct physical reasoning connects the zero-force point at the origin to maximum kinetic energy, rather than zero speed.
+                </p>
+            </div>
+
+            <div class="nav-actions">
+                <a href="physics-wpe.html" class="btn btn-secondary">&larr; Back to WPE Lesson</a>
+                <a href="progress.html" class="btn btn-primary">Check Session Progress &rarr;</a>
+            </div>
+        </section>
+
+        <footer>
+            Grade9 v4.0 · Synthetic Alpha Preview · Public Demo Only · Strictly Non-Production
+        </footer>
+    </main>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>

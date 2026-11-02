@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics WPE Lesson — Grade9 v4.0 Alpha Preview</title>
+    <link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div>
+                <span class="brand-tag">Grade9 v4.0 · Synthetic Alpha Preview</span>
+                <h1 class="brand-title">Work, Power &amp; Energy (WPE) Pilot</h1>
+            </div>
+            <nav class="top-nav" aria-label="Main Navigation">
+                <a href="index.html">Home</a>
+                <a href="physics-wpe.html" class="active" aria-current="page">Physics: WPE Pilot</a>
+                <a href="practice.html">Interactive Practice</a>
+                <a href="progress.html">Session Progress</a>
+                <a href="alpha-board.html">Alpha Roadmap</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumb" aria-label="Breadcrumbs">
+        <a href="index.html">Home</a> &gt; <span>Physics: WPE Pilot</span>
+    </div>
+
+    <main>
+        <div class="banner-disclosure" role="region" aria-label="Academic and Technical Disclaimer">
+            <strong>SYNTHETIC ALPHA PREVIEW — Academic admission: 0. Official keys, figures, adapter qualification and student release remain pending.</strong>
+            PUBLIC DEMO PREVIEW · DEMO ONLY · NOT ACADEMICALLY ADMITTED. This lesson is a demonstration of interactive pedagogy and dynamic physical representations. Synthetic pedagogical content only; zero authentic exam questions. No academic approval inferred from software validation.
+        </div>
+
+        <section class="card">
+            <h2>1. Fundamental Principles: Conservative Systems &amp; Energy</h2>
+            <p>
+                In classical Newtonian mechanics, a force \(\mathbf{F}\) is defined as <strong>conservative</strong> if the work done by the force in moving a particle between two points depends solely on the initial and final positions, and is completely independent of the trajectory taken:
+            </p>
+            <div class="math-box">
+                \oint \mathbf{F} \cdot d\mathbf{r} = 0 \iff \mathbf{F} = -\nabla U
+            </div>
+            <p>
+                In a one-dimensional system, this relates the force directly to the spatial derivative of the potential energy function \(U(x)\):
+            </p>
+            <div class="math-box">
+                F(x) = -\frac{dU}{dx}
+            </div>
+            <p>
+                The negative gradient indicates that the force always acts in the direction tending to decrease the potential energy, directing the system toward stable equilibrium points where \(\frac{dU}{dx} = 0\) and \(\frac{d^2U}{dx^2} > 0\).
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>2. Interactive Laboratory: Potential Well &amp; Turning Points</h2>
+            <p>
+                Observe how mechanical energy is partitioned between potential energy \(U(x)\) and kinetic energy \(K(x)\) for a particle of mass \(m = 1.0\text{ kg}\) moving in a harmonic potential well \(U(x) = \frac{1}{2} k x^2\) with \(k = 100.0\text{ N/m}\) and total energy \(E = 12.50\text{ J}\).
+            </p>
+
+            <div class="slider-container" role="region" aria-label="Interactive Potential Energy Slider">
+                <label for="physics-slider">
+                    <span>Particle Position \(x\) (Range: \(-0.50\text{ m}\) to \(+0.50\text{ m}\)):</span>
+                    <span id="val-x" class="slider-readout">0.00 m</span>
+                </label>
+                <input type="range" id="physics-slider" class="slider-input" min="-0.50" max="0.50" step="0.01" value="0.00" aria-label="Particle position slider">
+                
+                <div class="grid-cards" style="margin-top: 16px; margin-bottom: 0;">
+                    <div style="background: var(--surface); padding: 12px; border: 1px solid var(--border); border-radius: 6px;">
+                        <span style="font-size: 12px; color: var(--text-muted); display: block;">Potential Energy \(U(x)\)</span>
+                        <strong id="val-u" class="slider-readout" style="font-size: 18px;">0.00 J</strong>
+                    </div>
+                    <div style="background: var(--surface); padding: 12px; border: 1px solid var(--border); border-radius: 6px;">
+                        <span style="font-size: 12px; color: var(--text-muted); display: block;">Kinetic Energy \(K(x)\)</span>
+                        <strong id="val-k" class="slider-readout" style="font-size: 18px; color: #16a34a;">12.50 J</strong>
+                    </div>
+                    <div style="background: var(--surface); padding: 12px; border: 1px solid var(--border); border-radius: 6px;">
+                        <span style="font-size: 12px; color: var(--text-muted); display: block;">Instantaneous Speed \(v(x)\)</span>
+                        <strong id="val-v" class="slider-readout" style="font-size: 18px; color: #9333ea;">5.00 m/s</strong>
+                    </div>
+                </div>
+            </div>
+
+            <p style="font-size: 13px; color: var(--text-muted); margin-top: 8px;">
+                <em>Notice:</em> As \(x \to \pm 0.50\text{ m}\), \(U(x) \to 12.50\text{ J}\), meaning \(K(x) \to 0\text{ J}\) and \(v \to 0\text{ m/s}\). These boundary points are the <strong>turning points</strong> of the motion.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>3. The Work-Energy Theorem Invariance</h2>
+            <p>
+                The Work-Energy Theorem asserts that the net work done by all forces (conservative, non-conservative, and external) acting on a point particle equals the net change in its kinetic energy:
+            </p>
+            <div class="math-box">
+                W_{\text{net}} = \int_{x_i}^{x_f} F_{\text{net}} \, dx = \Delta K = K_f - K_i
+            </div>
+            <p>
+                When non-conservative forces (such as friction or drag) are absent, \(W_{\text{net}} = W_c = -\Delta U\). Rearranging yields the fundamental law of <strong>Conservation of Mechanical Energy</strong>:
+            </p>
+            <div class="math-box">
+                \Delta K + \Delta U = 0 \implies E = K + U = \text{constant}
+            </div>
+            <div class="nav-actions">
+                <a href="index.html" class="btn btn-secondary">&larr; Back to Portal</a>
+                <a href="practice.html" class="btn btn-primary">Proceed to Interactive Practice &rarr;</a>
+            </div>
+        </section>
+
+        <footer>
+            Grade9 v4.0 · Synthetic Alpha Preview · Public Demo Only · Strictly Non-Production
+        </footer>
+    </main>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>
