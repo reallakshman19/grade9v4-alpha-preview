@@ -163,8 +163,52 @@
       "nativeIntegration": "NOT_RUN",
       "scienceReview": "PENDING",
       "notes": "Contains exactly one R3 Conditions finding candidate; N05–N08 are unqualified source-to-Core1A construction examples."
+    },
+    {
+      "id": "B06",
+      "order": 6,
+      "date": "2026-11-02",
+      "title": "Five source-to-Core1A construction candidates (N01–N04, N09)",
+      "status": "SYNTHETIC_REVIEW",
+      "href": "b06-five-subtopics.html",
+      "count": 5,
+      "topics": [
+        {
+          "label": "Signed work as force projection",
+          "record": "WPE-N01",
+          "anchor": "n01"
+        },
+        {
+          "label": "Variable force, signed areas and work",
+          "record": "WPE-N02",
+          "anchor": "n02"
+        },
+        {
+          "label": "Net work and kinetic-energy change",
+          "record": "WPE-N03",
+          "anchor": "n03"
+        },
+        {
+          "label": "Momentum, kinetic energy and inertial frames",
+          "record": "WPE-N04",
+          "anchor": "n04"
+        },
+        {
+          "label": "Friction, selected body and contact",
+          "record": "WPE-N09",
+          "anchor": "n09"
+        }
+      ],
+      "nativeIntegration": "NOT_RUN",
+      "scienceReview": "PENDING",
+      "qrtJoin": "NONE",
+      "physicsBlueprint": "PHYS-QRT-BLUEPRINT 0.2.0 DRAFT_OWNER_REVIEW",
+      "topicAdapter": "NO_APPROVED_SELECTED_ADAPTER",
+      "evidence_map": "b06-evidence-map.json",
+      "notes": "All five are authored synthetic construction candidates. No exact reviewed SL2/QRT question join, no selected WPE adapter, and no B1–B7 qualification."
     }
   ],
   "archiveNote": "B01 figure-label repair is a private patch/test handoff, not a completed five-subtopic HTML batch and is not published here.",
-  "appendInstructions": "Append each future five-subtopic batch as a new HTML page and a manifest entry; preserve previous permanent URLs. All academic gate statuses are independent of public web availability."
+  "appendInstructions": "New batch: create five source-bound synthetic topic pages and evidence map, commit index and update this manifest. reader.html merges them into a cumulative review view automatically. Never infer academic approval from rendered pages.",
+  "reader_href": "reader.html"
 }
