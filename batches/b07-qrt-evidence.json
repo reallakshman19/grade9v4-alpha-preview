@@ -1,0 +1,241 @@
+{
+  "schema": "g9v4-wpe-qrt-exact-task-review-batch/v1",
+  "batch_id": "B07",
+  "date": "2026-11-02",
+  "purpose": "Publish five provenance-safe adjudication status cards and mechanical Blueprint nonpromotion, not make academic decisions.",
+  "coverage_note": "Four reviewed APPLY/D2 tasks + one unreviewed contested D3 lead; 0 admissions; 11 unsupported D3/D4 slots unchanged.",
+  "source_pins": {
+    "independent_reconciliation": {
+      "path": "workspace/legacy/g9v3.5/chatgpt/output/WPE_Core2_Academic_Review_R1_20261031/RECONCILED_STATUS.json",
+      "github_blob_sha": "1aac875314376a6f2207470cc9d59ef6cc6685ae"
+    },
+    "report": {
+      "path": "workspace/legacy/g9v3.5/chatgpt/output/WPE_Core2_Academic_Review_R1_20261031/RECONCILIATION_REPORT.md",
+      "github_blob_sha": "83965eda584d2058b70c3fbe6ee35f1765f96808"
+    },
+    "prior_exposed_audit": {
+      "path": "WPE_Source_to_Core1A_Concept/evidence/ATTACHED_CORE2_ADDENDUM.md",
+      "github_blob_sha": "69445e66a99bc9783ab7566aff7fa2b00da75639"
+    },
+    "physics_blueprint": {
+      "path": "templates/physics-blueprint/physics-blueprint.D3-D4.json",
+      "github_blob_sha": "700dafcbe86d76442637bcf214eeb544497cf4ea",
+      "blueprint_id": "PHYS-QRT-BLUEPRINT",
+      "version": "0.2.0",
+      "status": "DRAFT_OWNER_REVIEW",
+      "cell_ids": [
+        "D3.1",
+        "D4.1",
+        "D3.2",
+        "D4.2",
+        "D3.3",
+        "D4.3",
+        "D3.4",
+        "D4.4",
+        "D3.5",
+        "D4.5",
+        "D3.6",
+        "D4.6",
+        "D3.7",
+        "D4.7"
+      ]
+    },
+    "source_adapter_pins": {
+      "path": "docs/p03/upstream-artifact-pins.json",
+      "github_blob_sha": "63e413982bfaa31a653bb85eb5800f49f74caeca",
+      "metadata_only": true
+    }
+  },
+  "subject": "Physics",
+  "topic": "WPE",
+  "operations": [
+    "RETRIEVE",
+    "EXPLAIN",
+    "APPLY",
+    "MODEL",
+    "REPRESENT",
+    "SYNTHESIZE",
+    "JUSTIFY"
+  ],
+  "adapter": {
+    "candidate_variants": "SIX_REPORTED_FIVE_UNIQUE_HASHES_IN_PRIOR_AUDIT",
+    "approved_selected_adapter": null,
+    "review_state": "HOLD_OWNER_SELECTION_AND_EXACT_BYTES",
+    "rule": "One selected exact WPE adapter version/hash per approved build. Do not synthesize a merged adapter."
+  },
+  "qrt_gate": {
+    "authenticated_source": "PER_TASK",
+    "independent_demand": "FIRST_PASS_FOR_FOUR_ONLY",
+    "official_QRT_source_role": "PENDING",
+    "owner_acceptance": "PENDING",
+    "release": "HOLD"
+  },
+  "summary": {
+    "reviewed_D2": 4,
+    "unadjudicated_contested": 1,
+    "blueprint_D3_D4_selected_cells": 0,
+    "direct_D3_D4_admissions": 0
+  },
+  "tasks": [
+    {
+      "source_id": "EX-M62",
+      "review_status": "INDEPENDENT_FIRST_PASS_RECORDED",
+      "qrt_final_admission": "NOT_GRANTED",
+      "source_role": "NOT_FINAL_QRT_ADJUDICATION",
+      "prior_author_proposal": {
+        "operation": "APPLY",
+        "band": "D3",
+        "score": 7
+      },
+      "current_demand_assessment": {
+        "operation": "APPLY",
+        "band": "D2",
+        "total": 4,
+        "factors": [
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        "qualifier": "Reviewed exact-task demand; not final product admission"
+      },
+      "blueprint_result": {
+        "eligible": false,
+        "reason": "D2_NOT_COVERED_BY_D3_D4_BLUEPRINT",
+        "candidate_cell": null
+      },
+      "source_custody": "OFFICIAL_PAPER_KEY_CORRESPONDENCE_PENDING",
+      "note": "Net translational power/no-loss idealization; shorter MCQ derivative check. Official paper/key join open.",
+      "release": "HOLD"
+    },
+    {
+      "source_id": "EX-M73",
+      "review_status": "INDEPENDENT_FIRST_PASS_RECORDED",
+      "qrt_final_admission": "NOT_GRANTED",
+      "source_role": "NOT_FINAL_QRT_ADJUDICATION",
+      "prior_author_proposal": {
+        "operation": "MODEL",
+        "band": "D3",
+        "score": 7
+      },
+      "current_demand_assessment": {
+        "operation": "APPLY",
+        "band": "D2",
+        "total": 3,
+        "factors": [
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        "qualifier": "Reviewed exact-task demand; not final product admission"
+      },
+      "blueprint_result": {
+        "eligible": false,
+        "reason": "D2_NOT_COVERED_BY_D3_D4_BLUEPRINT",
+        "candidate_cell": null
+      },
+      "source_custody": "OFFICIAL_PAPER_KEY_CORRESPONDENCE_PENDING",
+      "note": "Ideal/minimum lifting work via centre of mass. Arbitrary dissipative total-agent work is not determined. Official join open.",
+      "release": "HOLD"
+    },
+    {
+      "source_id": "EX-M101",
+      "review_status": "INDEPENDENT_FIRST_PASS_RECORDED",
+      "qrt_final_admission": "NOT_GRANTED",
+      "source_role": "NOT_FINAL_QRT_ADJUDICATION",
+      "prior_author_proposal": {
+        "operation": "JUSTIFY",
+        "band": "D3",
+        "score": 7
+      },
+      "current_demand_assessment": {
+        "operation": "APPLY",
+        "band": "D2",
+        "total": 4,
+        "factors": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "qualifier": "Reviewed exact-task demand; not final product admission"
+      },
+      "blueprint_result": {
+        "eligible": false,
+        "reason": "D2_NOT_COVERED_BY_D3_D4_BLUEPRINT",
+        "candidate_cell": null
+      },
+      "source_custody": "OFFICIAL_PAPER_KEY_CORRESPONDENCE_PENDING",
+      "note": "Distinguish fixed-force from fixed-extension spring work. This is not cut-spring MAIN. Official join open.",
+      "release": "HOLD"
+    },
+    {
+      "source_id": "WEP07-03",
+      "review_status": "INDEPENDENT_FIRST_PASS_RECORDED",
+      "qrt_final_admission": "NOT_GRANTED",
+      "source_role": "NOT_FINAL_QRT_ADJUDICATION",
+      "prior_author_proposal": {
+        "operation": "JUSTIFY",
+        "band": "D4",
+        "score": 9
+      },
+      "current_demand_assessment": {
+        "operation": "APPLY",
+        "band": "D2",
+        "total": 5,
+        "factors": [
+          1,
+          0,
+          2,
+          1,
+          1
+        ],
+        "qualifier": "Reviewed exact-task demand; not final product admission"
+      },
+      "blueprint_result": {
+        "eligible": false,
+        "reason": "D2_NOT_COVERED_BY_D3_D4_BLUEPRINT",
+        "candidate_cell": null
+      },
+      "source_custody": "PAPER_AND_FINAL_KEY_AGREE__PUBLISHER_ORIGIN_NOT_INDEPENDENTLY_ATTESTED",
+      "note": "NSEP2025/code61/Q57; actual paper, solution and final key agree. Source-conflict claim withdrawn.",
+      "release": "HOLD"
+    },
+    {
+      "source_id": "EX-M79",
+      "task_identity": "Q-ID-30",
+      "review_status": "CONFLICTING_AUTHOR_EXPOSED_PROPOSALS",
+      "qrt_final_admission": "NOT_GRANTED",
+      "source_role": "UNADJUDICATED",
+      "prior_author_proposal": {
+        "operation": "APPLY",
+        "band": "D3",
+        "score": null
+      },
+      "audit_diagnostic": {
+        "operation": "SYNTHESIZE",
+        "band": "D3",
+        "score": null,
+        "independent": false
+      },
+      "current_demand_assessment": null,
+      "blueprint_result": {
+        "eligible": false,
+        "reason": "NO_ACCEPTED_EXACT_TASK_OPERATION_OR_BAND",
+        "candidate_cell": null,
+        "possible_cells_for_REVIEW_ONLY": [
+          "D3.3",
+          "D3.6"
+        ]
+      },
+      "source_custody": "OFFICIAL_PAPER_KEY_AND_VERSIONED_REVIEW_PENDING",
+      "note": "Conflicting APPLY versus SYNTHESIZE hypotheses; decide shortest route and rest branch from sealed source-only assessment. No scoring or cell selection is authorized from previous exposed material.",
+      "release": "HOLD"
+    }
+  ],
+  "reviewer_hygiene": "This workbench contains prior verdicts and must not be supplied to a fresh blind reviewer. Use docs/agent-entry/07-independent-review.md and source-only first-pass inputs, then compare after sealing."
+}
