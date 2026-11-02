@@ -1,0 +1,203 @@
+{
+  "schema": "g9v4-wpe-b09-correction-and-prototype/v1",
+  "created": "2026-11-02",
+  "title": "Five bounded synthetic physics reconstructions + exact source-gate handoffs",
+  "prior_batch": "B08",
+  "prior_batch_sha": "d03a74332e309ab12f3c8a7c9dfdbdf5b36fe25e",
+  "status": "REVIEW_CANDIDATES_ONLY",
+  "rights": "Original external question stems, graphs, options and keys are not republished.",
+  "academic": {
+    "independently_admitted": 0,
+    "new_qrt_decisions": 0,
+    "native_core2_closures": 0,
+    "owner_core1a_acceptances": 0
+  },
+  "governing": {
+    "physics_blueprint": "DRAFT_OWNER_REVIEW",
+    "wpe_adapter": "NO_APPROVED_SELECTED_VERSION",
+    "qrt": "NO_NEW_INDEPENDENT_ADJUDICATION",
+    "d31": "PAUSED"
+  },
+  "cases": [
+    {
+      "id": "EX-M56",
+      "sequence": 1,
+      "prior_source_audit": {
+        "path": "workspace/output/G9V4_LOTS/LOT-05/questions/16/QUESTION_AUDIT.json",
+        "github_blob_sha": "f5ae9400fbf6c7fc38def6d91ae4d6634834838a",
+        "source_record_digest": "57330c99d1445aaf20f549a6e6eeec59f9c0e8d7a3bca2ae24ae5a686275fe17",
+        "source_record_hash": "57330c99d1445aaf20f549a6e6eeec59f9c0e8d7a3bca2ae24ae5a686275fe17"
+      },
+      "source_gate": "HOLD:FIGURE_UNRESOLVED",
+      "official_key_status": "HOLD:OFFICIAL_KEY_UNRESOLVED",
+      "task_title": "Signed areas under force–position graphs",
+      "work_type": "FIGURE_CUSTODY_LEAD_AND_SYNTHETIC_ILLUSTRATION",
+      "public_figure_lead": {
+        "label": "Third-party illustrated exam mirror",
+        "url": "https://questions.examside.com/past-years/year-wise/jee/jee-main/jee-main-2022-online-26th-june-evening-shift/1l58hfe08?lang=en",
+        "observed": "Contains four labelled graph images for the same date and work-ranking prompt",
+        "source_type": "THIRD_PARTY_MIRROR_NOT_OFFICIAL",
+        "source_verified": "NO",
+        "original_figure_custody": "OPEN",
+        "key_custody": "OPEN"
+      },
+      "qrt_status": "UNREVIEWED_NOT_ADMITTED",
+      "proposed_band_from_prior_audit": "D2",
+      "proposed_operation_from_prior_audit": "REPRESENT",
+      "new_demand_score": null,
+      "approved_cell": null,
+      "specific_actions": "Find authentic official paper PDF and all four figure panels; check signs, scales and figure identities before re-solving and key join",
+      "candidate_reconstruction": "AUTHOR_EXPOSED_SYNTHETIC_NOT_ORIGINAL_TASK",
+      "native_promotion": "HOLD"
+    },
+    {
+      "id": "EX-M61",
+      "sequence": 2,
+      "prior_source_audit": {
+        "path": "workspace/output/G9V4_LOTS/LOT-05/questions/17/QUESTION_AUDIT.json",
+        "github_blob_sha": "e139506dc55d61ca8c84d4771a0df2b00ca37883",
+        "source_record_digest": "bf7a3008c27d92309c6bd2e2e6c5881bd66ad6cef10030dd1177d2b7322e098a",
+        "source_record_hash": "bf7a3008c27d92309c6bd2e2e6c5881bd66ad6cef10030dd1177d2b7322e098a"
+      },
+      "source_gate": "HOLD:FIGURE_UNRESOLVED",
+      "official_key_status": "HOLD:OFFICIAL_KEY_UNRESOLVED",
+      "task_title": "Energy landscape and allowable position",
+      "work_type": "FIGURE_CUSTODY_LEAD_AND_SYNTHETIC_ILLUSTRATION",
+      "public_figure_lead": {
+        "label": "Third-party illustrated exam mirror",
+        "url": "https://questions.examside.com/past-years/year-wise/jee/jee-main/jee-main-2021-online-27th-july-evening-shift/1ks0k4p91?lang=en",
+        "observed": "Contains a potential-energy curve image referenced by the same-date task",
+        "source_type": "THIRD_PARTY_MIRROR_NOT_OFFICIAL",
+        "source_verified": "NO",
+        "original_figure_custody": "OPEN",
+        "key_custody": "OPEN"
+      },
+      "qrt_status": "UNREVIEWED_NOT_ADMITTED",
+      "proposed_band_from_prior_audit": "D2",
+      "proposed_operation_from_prior_audit": "EXPLAIN",
+      "new_demand_score": null,
+      "approved_cell": null,
+      "specific_actions": "Authenticate original potential curve; examine genuine turning/static statements with graph; independently re-solve and bind official key",
+      "candidate_reconstruction": "AUTHOR_EXPOSED_SYNTHETIC_NOT_ORIGINAL_TASK",
+      "native_promotion": "HOLD"
+    },
+    {
+      "id": "EX-M69",
+      "sequence": 3,
+      "prior_source_audit": {
+        "path": "workspace/output/G9V4_LOTS/LOT-06/questions/22/QUESTION_AUDIT.json",
+        "github_blob_sha": "e7a0228ec0092e483f684b4511696b81d38aefef",
+        "source_record_digest": "9761db6873712de6b069cc95d817491c45f5018250ef8deac3885ab0c7525add",
+        "source_record_hash": "9761db6873712de6b069cc95d817491c45f5018250ef8deac3885ab0c7525add"
+      },
+      "source_gate": "HOLD:FIGURE_UNRESOLVED",
+      "official_key_status": "HOLD:OFFICIAL_KEY_UNRESOLVED",
+      "task_title": "Constant-power kinematics and graph curvature",
+      "work_type": "FIGURE_CUSTODY_LEAD_AND_SYNTHETIC_ILLUSTRATION",
+      "public_figure_lead": {
+        "label": "Third-party illustrated exam mirror",
+        "url": "https://questions.examside.com/past-years/year-wise/jee/jee-main/jee-main-2020-online-3rd-september-evening-slot/tSTmRcKEdCVL7z6p0fjgy2xukf3rg4wa?lang=en",
+        "observed": "Contains four graphical options for the constant-power displacement–time task",
+        "source_type": "THIRD_PARTY_MIRROR_NOT_OFFICIAL",
+        "source_verified": "NO",
+        "original_figure_custody": "OPEN",
+        "key_custody": "OPEN"
+      },
+      "qrt_status": "UNREVIEWED_NOT_ADMITTED",
+      "proposed_band_from_prior_audit": "D2",
+      "proposed_operation_from_prior_audit": "REPRESENT",
+      "new_demand_score": null,
+      "approved_cell": null,
+      "specific_actions": "Replace irrelevant Hooke/spring rubric evidence with task-specific unscored candidate reasoning; obtain authentic four graph options and independent scored first pass",
+      "candidate_reconstruction": "AUTHOR_EXPOSED_SYNTHETIC_NOT_ORIGINAL_TASK",
+      "native_promotion": "HOLD"
+    },
+    {
+      "id": "EX-M105",
+      "sequence": 4,
+      "prior_source_audit": {
+        "path": "workspace/output/G9V4_LOTS/LOT-09/questions/38/QUESTION_AUDIT.json",
+        "github_blob_sha": "ba10c6885165a4a6f1cf04f93ca9b99a69e696d8",
+        "source_record_digest": "sha256:7f1f8bdb0ec27dc0c8dafc016414d1dd70d15932139624a0a03f7f629b437ed4",
+        "source_record_hash": "7f1f8bdb0ec27dc0c8dafc016414d1dd70d15932139624a0a03f7f629b437ed4"
+      },
+      "source_gate": "NOT_REQUIRED",
+      "official_key_status": "HOLD:OFFICIAL_KEY_UNRESOLVED",
+      "task_title": "Energy ledger for spring compression and friction",
+      "work_type": "SYNTHETIC_MODEL_OF_SPRING_FRICTION",
+      "public_figure_lead": null,
+      "qrt_status": "UNREVIEWED_NOT_ADMITTED",
+      "proposed_band_from_prior_audit": "D2",
+      "proposed_operation_from_prior_audit": "APPLY",
+      "new_demand_score": null,
+      "approved_cell": null,
+      "specific_actions": "Acquire official key/source correspondence and source-only independent first solve; distinguish setup from band claims",
+      "candidate_reconstruction": "AUTHOR_EXPOSED_SYNTHETIC_NOT_ORIGINAL_TASK",
+      "native_promotion": "HOLD"
+    },
+    {
+      "id": "EX-M106",
+      "sequence": 5,
+      "prior_source_audit": {
+        "path": "workspace/output/G9V4_LOTS/LOT-09/questions/39/QUESTION_AUDIT.json",
+        "github_blob_sha": "bc334a11e880a97a5727c0c9e1236b3bdbf556c3",
+        "source_record_digest": "sha256:89395cca6f98acf3a6845a526fe23d22fd1ab044eb29fd937ac5a5ca6a97d824",
+        "source_record_hash": "89395cca6f98acf3a6845a526fe23d22fd1ab044eb29fd937ac5a5ca6a97d824"
+      },
+      "source_gate": "NOT_REQUIRED",
+      "official_key_status": "HOLD:OFFICIAL_KEY_UNRESOLVED",
+      "task_title": "Turning point versus quasi-static equilibrium",
+      "work_type": "SYNTHETIC_CONTRAST_OF_DISTINCT_PENDULUM_MODELS",
+      "public_figure_lead": null,
+      "qrt_status": "UNREVIEWED_NOT_ADMITTED",
+      "proposed_band_from_prior_audit": "D3",
+      "proposed_operation_from_prior_audit": "MODEL",
+      "new_demand_score": null,
+      "approved_cell": null,
+      "specific_actions": "Disambiguate constant force applied over trajectory versus varying quasi-static force; independent scientific and QRT review, official key, adapter D3.4 expansion only if warranted",
+      "candidate_reconstruction": "AUTHOR_EXPOSED_SYNTHETIC_NOT_ORIGINAL_TASK",
+      "native_promotion": "HOLD"
+    }
+  ],
+  "m69_corrective_candidate": {
+    "source_id": "EX-M69",
+    "old_diagnostic": "TASK_FACTOR_EVIDENCE_MISMATCH",
+    "invalid_evidence_topics": [
+      "Hooke spring restoring force",
+      "spring elastic potential",
+      "force-displacement spring curve"
+    ],
+    "replace_with_task_aligned_unscored_candidate": [
+      {
+        "factor": "concept_model_selection",
+        "question_specific_observation": "Under the separately stated ideal net-constant-power model, identify P=dK/dt and the kinetic-energy route.",
+        "score": null
+      },
+      {
+        "factor": "representation_translation",
+        "question_specific_observation": "Compare s(t) shapes through velocity slope and sign of curvature. Authenticate all original graph options before evaluating the exam answer.",
+        "score": null
+      },
+      {
+        "factor": "reasoning_chain_length",
+        "question_specific_observation": "From P=dK/dt obtain v(t), then integrate v=ds/dt; compare with task's actual shortest answer-selection route.",
+        "score": null
+      },
+      {
+        "factor": "algebra_computational_load",
+        "question_specific_observation": "Track temporal power exponents symbolically, retaining the relevant initial condition.",
+        "score": null
+      },
+      {
+        "factor": "trap_exception_sensitivity",
+        "question_specific_observation": "Explicitly test released-from-rest and no-loss idealizations; graph panels are schematic and their identities still missing.",
+        "score": null
+      }
+    ],
+    "band": null,
+    "operation": null,
+    "editorial_state": "PROPOSED_CORRECTION_FOR_REVIEW_NOT_APPLIED_TO_NATIVE_SL2",
+    "review_needed": "Seal new independent source-only solve before exposing any of these proposals"
+  },
+  "source_leads_authority_note": "Only public third-party mirror URLs were found. The links are pointers for obtaining original publisher paper/figure evidence, not authenticity or permission receipts."
+}
