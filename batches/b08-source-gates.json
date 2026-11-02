@@ -1,0 +1,347 @@
+{
+  "schema": "g9v4-wpe-b08-source-gates/v1",
+  "generated": "2026-11-02",
+  "batch": "B08",
+  "scope": "Five in-scope WPE exam candidate blocker analyses: three graph-dependent, one D2 proposed, one D3 model/adapter gap.",
+  "academic_admissions": 0,
+  "source_only_required": true,
+  "reviewer_independence": "NO_NEW_INDEPENDENT_ASSESSMENT",
+  "blueprint": {
+    "path": "templates/physics-blueprint/physics-blueprint.D3-D4.json",
+    "github_blob_sha": "700dafcbe86d76442637bcf214eeb544497cf4ea",
+    "id": "PHYS-QRT-BLUEPRINT",
+    "version": "0.2.0",
+    "status": "DRAFT_OWNER_REVIEW",
+    "allowed_cells": [
+      "D3.1",
+      "D4.1",
+      "D3.2",
+      "D4.2",
+      "D3.3",
+      "D4.3",
+      "D3.4",
+      "D4.4",
+      "D3.5",
+      "D4.5",
+      "D3.6",
+      "D4.6",
+      "D3.7",
+      "D4.7"
+    ],
+    "selected_owner_blueprint": null
+  },
+  "topic_adapter": {
+    "approved_selected": false,
+    "selected_sha": null,
+    "notes": "Do not infer one approved WPE adapter from task-level proposed pin, variant manifests or candidate Blueprint cell names."
+  },
+  "pipeline": [
+    "source_and_figure_custody",
+    "official_key_custody",
+    "SL2_task_consistency",
+    "independent_qrt_adjudication",
+    "approved_blueprint_adapter_and_warrants",
+    "native_core2_and_owner_release"
+  ],
+  "cases": [
+    {
+      "id": "EX-M56",
+      "task_identity": "Q-ID-18",
+      "topic": "Four force–displacement graph panels",
+      "scope": "IN_SCOPE_WPE_ONLY",
+      "lot": "LOT-05",
+      "source_audit": {
+        "path": "workspace/output/G9V4_LOTS/LOT-05/questions/16/QUESTION_AUDIT.json",
+        "github_blob_sha": "f5ae9400fbf6c7fc38def6d91ae4d6634834838a",
+        "source_record_digest": "57330c99d1445aaf20f549a6e6eeec59f9c0e8d7a3bca2ae24ae5a686275fe17",
+        "source_record_hash": "57330c99d1445aaf20f549a6e6eeec59f9c0e8d7a3bca2ae24ae5a686275fe17"
+      },
+      "source_custody": "PARTIAL (4 remote figure placeholders unresolved)",
+      "figure": {
+        "status": "HOLD:FIGURE_UNRESOLVED",
+        "description": "[FIG-stem-1..4] 4 remote figure graphs unverified against authentic master"
+      },
+      "official_key": "HOLD:OFFICIAL_KEY_UNRESOLVED",
+      "blind_first_pass": "UNREVIEWED",
+      "question_sl2": {
+        "status": "UNREVIEWED",
+        "operation_proposal": "REPRESENT",
+        "secondary_operations": [
+          "APPLY"
+        ],
+        "score_proposal": 5,
+        "band_proposal": "D2",
+        "factor_scores": {
+          "concept_model_selection": 1,
+          "representation_translation": 2,
+          "reasoning_chain_length": 1,
+          "algebra_computational_load": 0,
+          "trap_exception_sensitivity": 1
+        },
+        "qualification": "PROPOSED_UNREVIEWED",
+        "factor_correspondence": "NOT_INDEPENDENTLY_ACCEPTED"
+      },
+      "diagnostic": null,
+      "blueprint": {
+        "draft_id": "PHYS-QRT-BLUEPRINT",
+        "version": "0.2.0",
+        "status": "DRAFT_OWNER_REVIEW",
+        "candidate_cell": null,
+        "cell_state": "SPEC_PENDING",
+        "eligible_for_promotion": false
+      },
+      "adapter": {
+        "status": "SPEC_PENDING",
+        "note": "No Owner-selected approved WPE adapter for this task",
+        "exact_selected_sha": null
+      },
+      "native_core2": "NOT_RUN",
+      "owner_admission": "PENDING_CP4_GATE",
+      "academic_admission": "NOT_ADMITTED",
+      "next_step": "Acquire and bind all four original graph panels; verify axes, signed areas, figure identity and official key.",
+      "review_role": "UNADJUDICATED_EXACT_TASK",
+      "review_packet_rule": "Blind reviewer must receive only source-only inputs, original figures and pinned rubric, never this author-exposed preflight or answers.",
+      "release": "HOLD"
+    },
+    {
+      "id": "EX-M61",
+      "task_identity": "Q-ID-20",
+      "topic": "Potential-energy curve",
+      "scope": "IN_SCOPE_WPE_ONLY",
+      "lot": "LOT-05",
+      "source_audit": {
+        "path": "workspace/output/G9V4_LOTS/LOT-05/questions/17/QUESTION_AUDIT.json",
+        "github_blob_sha": "e139506dc55d61ca8c84d4771a0df2b00ca37883",
+        "source_record_digest": "bf7a3008c27d92309c6bd2e2e6c5881bd66ad6cef10030dd1177d2b7322e098a",
+        "source_record_hash": "bf7a3008c27d92309c6bd2e2e6c5881bd66ad6cef10030dd1177d2b7322e098a"
+      },
+      "source_custody": "PARTIAL (remote U(x) curve unresolved)",
+      "figure": {
+        "status": "HOLD:FIGURE_UNRESOLVED",
+        "description": "[FIG-stem-1] U(x) vs x graph unverified against authentic master"
+      },
+      "official_key": "HOLD:OFFICIAL_KEY_UNRESOLVED",
+      "blind_first_pass": "UNREVIEWED",
+      "question_sl2": {
+        "status": "UNREVIEWED",
+        "operation_proposal": "EXPLAIN",
+        "secondary_operations": [
+          "REPRESENT"
+        ],
+        "score_proposal": 5,
+        "band_proposal": "D2",
+        "factor_scores": {
+          "concept_model_selection": 2,
+          "representation_translation": 1,
+          "reasoning_chain_length": 1,
+          "algebra_computational_load": 0,
+          "trap_exception_sensitivity": 1
+        },
+        "qualification": "PROPOSED_UNREVIEWED",
+        "factor_correspondence": "NOT_INDEPENDENTLY_ACCEPTED"
+      },
+      "diagnostic": null,
+      "blueprint": {
+        "draft_id": "PHYS-QRT-BLUEPRINT",
+        "version": "0.2.0",
+        "status": "DRAFT_OWNER_REVIEW",
+        "candidate_cell": null,
+        "cell_state": "SPEC_PENDING",
+        "eligible_for_promotion": false
+      },
+      "adapter": {
+        "status": "SPEC_PENDING",
+        "note": "No Owner-selected approved WPE adapter for this task",
+        "exact_selected_sha": null
+      },
+      "native_core2": "NOT_RUN",
+      "owner_admission": "PENDING_CP4_GATE",
+      "academic_admission": "NOT_ADMITTED",
+      "next_step": "Acquire the source U(x) graph and check which interpretations the plotted values and slopes actually support.",
+      "review_role": "UNADJUDICATED_EXACT_TASK",
+      "review_packet_rule": "Blind reviewer must receive only source-only inputs, original figures and pinned rubric, never this author-exposed preflight or answers.",
+      "release": "HOLD"
+    },
+    {
+      "id": "EX-M69",
+      "task_identity": "Q-ID-25",
+      "topic": "Constant-power displacement–time graph options",
+      "scope": "IN_SCOPE_WPE_ONLY",
+      "lot": "LOT-06",
+      "source_audit": {
+        "path": "workspace/output/G9V4_LOTS/LOT-06/questions/22/QUESTION_AUDIT.json",
+        "github_blob_sha": "e7a0228ec0092e483f684b4511696b81d38aefef",
+        "source_record_digest": "9761db6873712de6b069cc95d817491c45f5018250ef8deac3885ab0c7525add",
+        "source_record_hash": "9761db6873712de6b069cc95d817491c45f5018250ef8deac3885ab0c7525add"
+      },
+      "source_custody": "PARTIAL (graphical options unresolved)",
+      "figure": {
+        "status": "HOLD:FIGURE_UNRESOLVED",
+        "description": "[FIG-options-1..4] 4 remote graphical option images unverified against master"
+      },
+      "official_key": "HOLD:OFFICIAL_KEY_UNRESOLVED",
+      "blind_first_pass": "UNREVIEWED",
+      "question_sl2": {
+        "status": "UNREVIEWED",
+        "operation_proposal": "REPRESENT",
+        "secondary_operations": [
+          "EXPLAIN"
+        ],
+        "score_proposal": 5,
+        "band_proposal": "D2",
+        "factor_scores": {
+          "concept_model_selection": 1,
+          "representation_translation": 2,
+          "reasoning_chain_length": 1,
+          "algebra_computational_load": 0,
+          "trap_exception_sensitivity": 1
+        },
+        "qualification": "PROPOSED_UNREVIEWED",
+        "factor_correspondence": "INVALID_MISMATCH"
+      },
+      "diagnostic": {
+        "code": "TASK_FACTOR_EVIDENCE_MISMATCH",
+        "severity": "FAIL",
+        "reason": "Question scenario is constant power and s(t) option graphs; SL2 factor evidence instead discusses Hooke’s law, spring force and spring potential-energy graphs. Scoring evidence belongs to a different conceptual task."
+      },
+      "blueprint": {
+        "draft_id": "PHYS-QRT-BLUEPRINT",
+        "version": "0.2.0",
+        "status": "DRAFT_OWNER_REVIEW",
+        "candidate_cell": null,
+        "cell_state": "SPEC_PENDING",
+        "eligible_for_promotion": false
+      },
+      "adapter": {
+        "status": "SPEC_PENDING",
+        "note": "No Owner-selected approved WPE adapter for this task",
+        "exact_selected_sha": null
+      },
+      "native_core2": "NOT_RUN",
+      "owner_admission": "PENDING_CP4_GATE",
+      "academic_admission": "NOT_ADMITTED",
+      "next_step": "Recover four official option graphs; re-score the ACTUAL constant-power problem instead of copied spring/Hooke factor evidence.",
+      "review_role": "UNADJUDICATED_EXACT_TASK",
+      "review_packet_rule": "Blind reviewer must receive only source-only inputs, original figures and pinned rubric, never this author-exposed preflight or answers.",
+      "release": "HOLD"
+    },
+    {
+      "id": "EX-M105",
+      "task_identity": "Q-ID-44",
+      "topic": "Spring compression with friction",
+      "scope": "PRIMARY_IN_SCOPE_WPE",
+      "lot": "LOT-09",
+      "source_audit": {
+        "path": "workspace/output/G9V4_LOTS/LOT-09/questions/38/QUESTION_AUDIT.json",
+        "github_blob_sha": "ba10c6885165a4a6f1cf04f93ca9b99a69e696d8",
+        "source_record_digest": "sha256:7f1f8bdb0ec27dc0c8dafc016414d1dd70d15932139624a0a03f7f629b437ed4",
+        "source_record_hash": "7f1f8bdb0ec27dc0c8dafc016414d1dd70d15932139624a0a03f7f629b437ed4"
+      },
+      "source_custody": "VERIFIED_TEXT",
+      "figure": {
+        "status": "NOT_REQUIRED",
+        "description": "No original figure required by current audit"
+      },
+      "official_key": "HOLD:OFFICIAL_KEY_UNRESOLVED",
+      "blind_first_pass": "PENDING_BLIND_SOLVE",
+      "question_sl2": {
+        "status": "UNREVIEWED",
+        "operation_proposal": "APPLY",
+        "secondary_operations": [
+          "MODEL"
+        ],
+        "score_proposal": 5,
+        "band_proposal": "D2",
+        "factor_scores": {
+          "concept_model_selection": 1,
+          "representation_translation": 1,
+          "reasoning_chain_length": 1,
+          "algebra_computational_load": 1,
+          "trap_exception_sensitivity": 1
+        },
+        "qualification": "PROPOSED_UNREVIEWED",
+        "factor_correspondence": "NOT_INDEPENDENTLY_ACCEPTED"
+      },
+      "diagnostic": null,
+      "blueprint": {
+        "draft_id": "PHYS-QRT-BLUEPRINT",
+        "version": "0.2.0",
+        "status": "DRAFT_OWNER_REVIEW",
+        "candidate_cell": null,
+        "cell_state": "SPEC_PENDING",
+        "eligible_for_promotion": false
+      },
+      "adapter": {
+        "status": "SPEC_PENDING",
+        "note": "No Owner-selected approved WPE adapter for this task",
+        "exact_selected_sha": null
+      },
+      "native_core2": "NOT_RUN",
+      "owner_admission": "PENDING_INDEPENDENT_REVIEW",
+      "academic_admission": "NOT_ADMITTED",
+      "next_step": "Independently solve the exact stem without exposed coaching work; verify official key and D2 prerequisite handling.",
+      "review_role": "UNADJUDICATED_EXACT_TASK",
+      "review_packet_rule": "Blind reviewer must receive only source-only inputs, original figures and pinned rubric, never this author-exposed preflight or answers.",
+      "release": "HOLD"
+    },
+    {
+      "id": "EX-M106",
+      "task_identity": "Q-ID-45",
+      "topic": "Horizontal-force pendulum and model choice",
+      "scope": "PRIMARY_IN_SCOPE_WPE",
+      "lot": "LOT-09",
+      "source_audit": {
+        "path": "workspace/output/G9V4_LOTS/LOT-09/questions/39/QUESTION_AUDIT.json",
+        "github_blob_sha": "bc334a11e880a97a5727c0c9e1236b3bdbf556c3",
+        "source_record_digest": "sha256:89395cca6f98acf3a6845a526fe23d22fd1ab044eb29fd937ac5a5ca6a97d824",
+        "source_record_hash": "89395cca6f98acf3a6845a526fe23d22fd1ab044eb29fd937ac5a5ca6a97d824"
+      },
+      "source_custody": "VERIFIED_TEXT",
+      "figure": {
+        "status": "NOT_REQUIRED",
+        "description": "No original figure required by current audit"
+      },
+      "official_key": "HOLD:OFFICIAL_KEY_UNRESOLVED",
+      "blind_first_pass": "PENDING_BLIND_SOLVE",
+      "question_sl2": {
+        "status": "UNREVIEWED",
+        "operation_proposal": "MODEL",
+        "secondary_operations": [
+          "APPLY"
+        ],
+        "score_proposal": 7,
+        "band_proposal": "D3",
+        "factor_scores": {
+          "concept_model_selection": 2,
+          "representation_translation": 1,
+          "reasoning_chain_length": 2,
+          "algebra_computational_load": 1,
+          "trap_exception_sensitivity": 1
+        },
+        "qualification": "PROPOSED_UNREVIEWED",
+        "factor_correspondence": "NOT_INDEPENDENTLY_ACCEPTED"
+      },
+      "diagnostic": null,
+      "blueprint": {
+        "draft_id": "PHYS-QRT-BLUEPRINT",
+        "version": "0.2.0",
+        "status": "DRAFT_OWNER_REVIEW",
+        "candidate_cell": "D3.4",
+        "cell_state": "PINNED_CELL_UNQUALIFIED",
+        "eligible_for_promotion": false
+      },
+      "adapter": {
+        "status": "CELL_UNQUALIFIED_ADAPTER_GAP",
+        "note": "WPE adapter defines cell D3.1 only. Target cell D3.4 requires adapter cell expansion; flagged as SPEC_GAP.",
+        "exact_selected_sha": null
+      },
+      "native_core2": "NOT_RUN",
+      "owner_admission": "PENDING_INDEPENDENT_REVIEW",
+      "academic_admission": "NOT_ADMITTED",
+      "next_step": "Independently resolve constant-force versus quasi-static interpretation; obtain official key and review WPE adapter D3.4 gap.",
+      "review_role": "UNADJUDICATED_EXACT_TASK",
+      "review_packet_rule": "Blind reviewer must receive only source-only inputs, original figures and pinned rubric, never this author-exposed preflight or answers.",
+      "release": "HOLD"
+    }
+  ]
+}
