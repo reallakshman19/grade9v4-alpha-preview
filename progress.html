@@ -28,9 +28,9 @@
     </div>
 
     <main>
-        <div class="banner-disclosure" role="region" aria-label="Academic and Technical Disclaimer">
+                <div class="banner-disclosure" role="region" aria-label="Academic and Technical Disclaimer">
             <strong>SYNTHETIC ALPHA PREVIEW — Academic admission: 0. Official keys, figures, adapter qualification and student release remain pending.</strong>
-            PUBLIC DEMO PREVIEW · DEMO ONLY · NOT ACADEMICALLY ADMITTED. All progress tracking in this Alpha demonstration is strictly ephemeral and stored client-side in your local browser session. Zero learner accounts, zero database persistence. No academic approval inferred from software validation.
+            <div style="margin-top: 4px; font-size: 13px;">PUBLIC DEMO PREVIEW · DEMO ONLY · NOT ACADEMICALLY ADMITTED. Synthetic demonstration only; 0 examination candidates admitted. No academic approval inferred from software validation. Mathematics and Chemistry remain in Draft / Hold.</div>
         </div>
 
         <section class="card" id="progress-status-display">
@@ -59,7 +59,7 @@
                         <tr>
                             <td><strong>Energy Practice Trial</strong></td>
                             <td>Physics (Pilot)</td>
-                            <td>Reasoning Gate &amp; Quadratic Derivation</td>
+                            <td>Ungraded Attempt &amp; Quadratic Derivation</td>
                             <td><span id="status-wpe-practice" class="badge badge-hold">Not Started</span></td>
                         </tr>
                         <tr>
@@ -87,14 +87,14 @@
         </section>
 
         <section class="card">
-            <h2>Zero-Data Architecture &amp; Privacy Safeguards</h2>
+            <h2>Client-Side Session State &amp; Privacy Limits</h2>
             <p>
-                In alignment with Grade9 v4.0 architecture, this public Alpha preview adheres to strict learner data privacy standards:
+                In alignment with Grade9 v4.0 architecture, this public Alpha preview adheres to the following client-side data boundaries:
             </p>
             <ul style="margin-left: 20px; margin-bottom: 16px; font-size: 14px; line-height: 1.8;">
-                <li><strong>No User Identification:</strong> No student IDs, emails, IP tracking, or user authentication tokens are stored or collected.</li>
-                <li><strong>Ephemeral Session Memory:</strong> Progress indicators live strictly in <code>sessionStorage</code> and are purged immediately when the tab closes or upon clicking "Reset".</li>
-                <li><strong>Air-Gapped Rendering:</strong> Every calculation, slider interaction, and reasoning check runs locally within your browser sandbox.</li>
+                <li><strong>No User Identification:</strong> The app JavaScript requests no learner identity or credentials and does not transmit the learner explanation. Hosting providers can still process server access logs and IP addresses.</li>
+                <li><strong>Ephemeral Session Memory:</strong> Progress flags, selected answer, and timestamp are stored in <code>sessionStorage</code> where supported; no explanation text is saved. Reset clears this app state. Browser session lifetime depends on browser behavior.</li>
+                <li><strong>Local Calculations:</strong> The slider and attempt-length check run locally. The explanation is not automatically judged for physics correctness. Static resource requests may reach the host when viewed over HTTP.</li>
             </ul>
 
             <div class="nav-actions">

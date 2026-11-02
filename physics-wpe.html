@@ -28,61 +28,61 @@
     </div>
 
     <main>
-        <div class="banner-disclosure" role="region" aria-label="Academic and Technical Disclaimer">
+                <div class="banner-disclosure" role="region" aria-label="Academic and Technical Disclaimer">
             <strong>SYNTHETIC ALPHA PREVIEW — Academic admission: 0. Official keys, figures, adapter qualification and student release remain pending.</strong>
-            PUBLIC DEMO PREVIEW · DEMO ONLY · NOT ACADEMICALLY ADMITTED. This lesson is a demonstration of interactive pedagogy and dynamic physical representations. Synthetic pedagogical content only; zero authentic exam questions. No academic approval inferred from software validation.
+            <div style="margin-top: 4px; font-size: 13px;">PUBLIC DEMO PREVIEW · DEMO ONLY · NOT ACADEMICALLY ADMITTED. Synthetic demonstration only; 0 examination candidates admitted. No academic approval inferred from software validation. Mathematics and Chemistry remain in Draft / Hold.</div>
         </div>
 
         <section class="card">
             <h2>1. Fundamental Principles: Conservative Systems &amp; Energy</h2>
             <p>
-                In classical Newtonian mechanics, a force \(\mathbf{F}\) is defined as <strong>conservative</strong> if the work done by the force in moving a particle between two points depends solely on the initial and final positions, and is completely independent of the trajectory taken:
+                In classical Newtonian mechanics, a force <math display="inline"><mrow><mstyle mathvariant="bold"><mi>F</mi></mstyle></mrow></math> is defined as <strong>conservative</strong> if the work done by the force in moving a particle between two points depends solely on the initial and final positions, and is completely independent of the trajectory taken:
             </p>
             <div class="math-box">
-                \oint \mathbf{F} \cdot d\mathbf{r} = 0 \iff \mathbf{F} = -\nabla U
+                <div class="equation-steps"><math display="inline"><mrow><mo>∮</mo><mstyle mathvariant="bold"><mi>F</mi></mstyle><mo>⋅</mo><mi>d</mi><mstyle mathvariant="bold"><mi>r</mi></mstyle></mrow></math><math display="inline"><mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mstyle mathvariant="bold"><mi>F</mi></mstyle></mrow></math><math display="inline"><mrow><mo>=</mo><mo>-</mo><mo>∇</mo><mi>U</mi></mrow></math></div>
             </div>
             <p>
-                In a one-dimensional system, this relates the force directly to the spatial derivative of the potential energy function \(U(x)\):
+                In a one-dimensional system, this relates the force directly to the spatial derivative of the potential energy function <math display="inline"><mrow><mi>U</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>:
             </p>
             <div class="math-box">
-                F(x) = -\frac{dU}{dx}
+                <div class="equation-steps"><math display="inline"><mrow><mi>F</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math><math display="inline"><mrow><mo>=</mo><mo>-</mo><mfrac><mrow><mi>d</mi><mi>U</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac></mrow></math></div>
             </div>
             <p>
-                The negative gradient indicates that the force always acts in the direction tending to decrease the potential energy, directing the system toward stable equilibrium points where \(\frac{dU}{dx} = 0\) and \(\frac{d^2U}{dx^2} > 0\).
+                The negative gradient indicates that the force always acts in the direction tending to decrease the potential energy, directing the system toward stable equilibrium points where <math display="inline"><mrow><mfrac><mrow><mi>d</mi><mi>U</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></math> and <math display="inline"><mrow><mfrac><mrow><msup><mi>d</mi><mrow><mn>2</mn></mrow></msup><mi>U</mi></mrow><mrow><mi>d</mi><msup><mi>x</mi><mrow><mn>2</mn></mrow></msup></mrow></mfrac><mo>&gt;</mo><mn>0</mn></mrow></math>.
             </p>
         </section>
 
         <section class="card">
             <h2>2. Interactive Laboratory: Potential Well &amp; Turning Points</h2>
             <p>
-                Observe how mechanical energy is partitioned between potential energy \(U(x)\) and kinetic energy \(K(x)\) for a particle of mass \(m = 1.0\text{ kg}\) moving in a harmonic potential well \(U(x) = \frac{1}{2} k x^2\) with \(k = 100.0\text{ N/m}\) and total energy \(E = 12.50\text{ J}\).
+                Observe how mechanical energy is partitioned between potential energy <math display="inline"><mrow><mi>U</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math> and kinetic energy <math display="inline"><mrow><mi>K</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math> for a particle of mass <math display="inline"><mrow><mi>m</mi><mo>=</mo><mn>1.0</mn><mspace width="0.25em"/><mtext>kg</mtext></mrow></math> moving in a harmonic potential well <math display="inline"><mrow><mi>U</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi>k</mi><msup><mi>x</mi><mrow><mn>2</mn></mrow></msup></mrow></math> with <math display="inline"><mrow><mi>k</mi><mo>=</mo><mn>100.0</mn><mspace width="0.25em"/><mtext>N/m</mtext></mrow></math> and total energy <math display="inline"><mrow><mi>E</mi><mo>=</mo><mn>12.50</mn><mspace width="0.25em"/><mtext>J</mtext></mrow></math>.
             </p>
 
             <div class="slider-container" role="region" aria-label="Interactive Potential Energy Slider">
                 <label for="physics-slider">
-                    <span>Particle Position \(x\) (Range: \(-0.50\text{ m}\) to \(+0.50\text{ m}\)):</span>
+                    <span>Particle Position <math display="inline"><mrow><mi>x</mi></mrow></math> (Range: <math display="inline"><mrow><mo>-</mo><mn>0.50</mn><mspace width="0.25em"/><mtext>m</mtext></mrow></math> to <math display="inline"><mrow><mo>+</mo><mn>0.50</mn><mspace width="0.25em"/><mtext>m</mtext></mrow></math>):</span>
                     <span id="val-x" class="slider-readout">0.00 m</span>
                 </label>
                 <input type="range" id="physics-slider" class="slider-input" min="-0.50" max="0.50" step="0.01" value="0.00" aria-label="Particle position slider">
                 
                 <div class="grid-cards" style="margin-top: 16px; margin-bottom: 0;">
                     <div style="background: var(--surface); padding: 12px; border: 1px solid var(--border); border-radius: 6px;">
-                        <span style="font-size: 12px; color: var(--text-muted); display: block;">Potential Energy \(U(x)\)</span>
+                        <span style="font-size: 12px; color: var(--text-muted); display: block;">Potential Energy <math display="inline"><mrow><mi>U</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math></span>
                         <strong id="val-u" class="slider-readout" style="font-size: 18px;">0.00 J</strong>
                     </div>
                     <div style="background: var(--surface); padding: 12px; border: 1px solid var(--border); border-radius: 6px;">
-                        <span style="font-size: 12px; color: var(--text-muted); display: block;">Kinetic Energy \(K(x)\)</span>
+                        <span style="font-size: 12px; color: var(--text-muted); display: block;">Kinetic Energy <math display="inline"><mrow><mi>K</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math></span>
                         <strong id="val-k" class="slider-readout" style="font-size: 18px; color: #16a34a;">12.50 J</strong>
                     </div>
                     <div style="background: var(--surface); padding: 12px; border: 1px solid var(--border); border-radius: 6px;">
-                        <span style="font-size: 12px; color: var(--text-muted); display: block;">Instantaneous Speed \(v(x)\)</span>
+                        <span style="font-size: 12px; color: var(--text-muted); display: block;">Instantaneous Speed <math display="inline"><mrow><mi>v</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math></span>
                         <strong id="val-v" class="slider-readout" style="font-size: 18px; color: #9333ea;">5.00 m/s</strong>
                     </div>
                 </div>
             </div>
 
             <p style="font-size: 13px; color: var(--text-muted); margin-top: 8px;">
-                <em>Notice:</em> As \(x \to \pm 0.50\text{ m}\), \(U(x) \to 12.50\text{ J}\), meaning \(K(x) \to 0\text{ J}\) and \(v \to 0\text{ m/s}\). These boundary points are the <strong>turning points</strong> of the motion.
+                <em>Notice:</em> As <math display="inline"><mrow><mi>x</mi><mo>→</mo><mo>±</mo><mn>0.50</mn><mspace width="0.25em"/><mtext>m</mtext></mrow></math>, <math display="inline"><mrow><mi>U</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>→</mo><mn>12.50</mn><mspace width="0.25em"/><mtext>J</mtext></mrow></math>, meaning <math display="inline"><mrow><mi>K</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>→</mo><mn>0</mn><mspace width="0.25em"/><mtext>J</mtext></mrow></math> and <math display="inline"><mrow><mi>v</mi><mo>→</mo><mn>0</mn><mspace width="0.25em"/><mtext>m/s</mtext></mrow></math>. These boundary points are the <strong>turning points</strong> of the motion.
             </p>
         </section>
 
@@ -92,13 +92,13 @@
                 The Work-Energy Theorem asserts that the net work done by all forces (conservative, non-conservative, and external) acting on a point particle equals the net change in its kinetic energy:
             </p>
             <div class="math-box">
-                W_{\text{net}} = \int_{x_i}^{x_f} F_{\text{net}} \, dx = \Delta K = K_f - K_i
+                <div class="equation-steps"><math display="inline"><mrow><msub><mi>W</mi><mrow><mtext>net</mtext></mrow></msub></mrow></math><math display="inline"><mrow><mo>=</mo><msubsup><mo>∫</mo><mrow><msub><mi>x</mi><mrow><mi>i</mi></mrow></msub></mrow><mrow><msub><mi>x</mi><mrow><mi>f</mi></mrow></msub></mrow></msubsup><msub><mi>F</mi><mrow><mtext>net</mtext></mrow></msub><mspace width="0.2em"></mspace><mi>d</mi><mi>x</mi></mrow></math><math display="inline"><mrow><mo>=</mo><mo>Δ</mo><mi>K</mi></mrow></math><math display="inline"><mrow><mo>=</mo><msub><mi>K</mi><mrow><mi>f</mi></mrow></msub><mo>-</mo><msub><mi>K</mi><mrow><mi>i</mi></mrow></msub></mrow></math></div>
             </div>
             <p>
-                When non-conservative forces (such as friction or drag) are absent, \(W_{\text{net}} = W_c = -\Delta U\). Rearranging yields the fundamental law of <strong>Conservation of Mechanical Energy</strong>:
+                When non-conservative forces (such as friction or drag) are absent, <math display="inline"><mrow><msub><mi>W</mi><mrow><mtext>net</mtext></mrow></msub><mo>=</mo><msub><mi>W</mi><mrow><mi>c</mi></mrow></msub><mo>=</mo><mo>-</mo><mo>Δ</mo><mi>U</mi></mrow></math>. Rearranging yields the fundamental law of <strong>Conservation of Mechanical Energy</strong>:
             </p>
             <div class="math-box">
-                \Delta K + \Delta U = 0 \implies E = K + U = \text{constant}
+                <div class="equation-steps"><math display="inline"><mrow><mo>Δ</mo><mi>K</mi><mo>+</mo><mo>Δ</mo><mi>U</mi></mrow></math><math display="inline"><mrow><mo>=</mo><mn>0</mn></mrow></math><math display="inline"><mrow><mo>⇒</mo><mi>E</mi></mrow></math><math display="inline"><mrow><mo>=</mo><mi>K</mi><mo>+</mo><mi>U</mi></mrow></math><math display="inline"><mrow><mo>=</mo><mtext>constant</mtext></mrow></math></div>
             </div>
             <div class="nav-actions">
                 <a href="index.html" class="btn btn-secondary">&larr; Back to Portal</a>

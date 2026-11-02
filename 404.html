@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found — Grade9 v4.0 Alpha Preview</title>
+    <!-- For a deployed nested 404, resolve all relative links against the project root.
+         Direct local-file review keeps ordinary relative paths. No machine-specific paths. -->
+    <script>
+      if (location.protocol === 'http:' || location.protocol === 'https:') {
+        const marker = '/grade9v4-alpha-preview/';
+        const pathname = location.pathname;
+        const pos = pathname.indexOf(marker);
+        const root = pos >= 0 ? pathname.slice(0, pos + marker.length) : '/';
+        const base = document.createElement('base');
+        base.href = root;
+        document.head.appendChild(base);
+      }
+    </script>
     <link rel="stylesheet" href="assets/app.css">
 </head>
 <body>
@@ -28,15 +41,15 @@
     </div>
 
     <main>
-        <div class="banner-disclosure" role="region" aria-label="Academic and Technical Disclaimer">
+                <div class="banner-disclosure" role="region" aria-label="Academic and Technical Disclaimer">
             <strong>SYNTHETIC ALPHA PREVIEW — Academic admission: 0. Official keys, figures, adapter qualification and student release remain pending.</strong>
-            PUBLIC DEMO PREVIEW · DEMO ONLY · NOT ACADEMICALLY ADMITTED. Public synthetic demonstration site. No academic approval inferred from software validation.
+            <div style="margin-top: 4px; font-size: 13px;">PUBLIC DEMO PREVIEW · DEMO ONLY · NOT ACADEMICALLY ADMITTED. Synthetic demonstration only; 0 examination candidates admitted. No academic approval inferred from software validation. Mathematics and Chemistry remain in Draft / Hold.</div>
         </div>
 
         <section class="card" style="text-align: center; padding: 48px 24px;">
             <h2 style="font-size: 32px; margin-bottom: 16px;">Requested Surface Not Found</h2>
             <p style="max-width: 540px; margin: 0 auto 24px; color: var(--text-muted);">
-                The page or resource you are looking for does not exist in this static preview deployment. All navigation within the Alpha pilot operates via relative static paths.
+                The page or resource you are looking for does not exist in this static preview deployment. Use the project-root links below to return to the demonstration site.
             </p>
             <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
                 <a href="index.html" class="btn btn-primary">Return to Portal Home &rarr;</a>

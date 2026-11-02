@@ -1,7 +1,7 @@
 /**
  * Grade9 v4.0 — Public Synthetic HTML Alpha Preview Script
  * Offline-first, client-side only. Zero remote network calls.
- * Learner reasoning is kept local in sessionStorage and never persisted remotely.
+ * The controller stores only session status and selected answer, not learner reasoning text.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -63,96 +63,89 @@ function initSlider() {
     update();
 }
 
-// Practice Step-by-Step Gate with Reasoning Requirement
+// Attempt/length gate only: no semantic rationale evaluation is performed.
 function initPracticeGate() {
-    const optionButtons = document.querySelectorAll('.practice-options .btn-option');
+    const choices = Array.from(document.querySelectorAll('input[name="practice-answer"]'));
     const reasoningInput = document.getElementById('learner-reasoning');
     const submitBtn = document.getElementById('btn-submit-answer');
+    const revealBtn = document.getElementById('btn-reveal-solution');
     const hintBtn = document.getElementById('btn-hint');
     const hintPanel = document.getElementById('panel-hint');
     const solutionPanel = document.getElementById('panel-solution');
     const validationMessage = document.getElementById('validation-message');
 
-    let selectedValue = null;
-
-    if (optionButtons.length > 0) {
-        optionButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                optionButtons.forEach(b => b.classList.remove('selected'));
-                btn.classList.add('selected');
-                selectedValue = btn.getAttribute('data-value');
-                clearValidation();
-            });
-        });
+    function message(text, isError = true) {
+        if (!validationMessage) return;
+        validationMessage.textContent = text;
+        validationMessage.style.display = text ? 'block' : 'none';
+        validationMessage.style.color = isError ? '#b91c1c' : '#166534';
+        validationMessage.style.marginTop = '8px';
+        validationMessage.style.fontWeight = '600';
     }
 
-    if (hintBtn && hintPanel) {
-        hintBtn.addEventListener('click', () => {
-            const isHidden = !hintPanel.classList.contains('active');
-            if (isHidden) {
-                hintPanel.classList.add('active');
-                hintBtn.textContent = 'Hide Physical Hint';
-            } else {
-                hintPanel.classList.remove('active');
-                hintBtn.textContent = 'Show Physical Hint';
-            }
-        });
-    }
-
-    function clearValidation() {
-        if (validationMessage) {
-            validationMessage.textContent = '';
-            validationMessage.style.display = 'none';
+    function concealSolution() {
+        if (solutionPanel) {
+            solutionPanel.hidden = true;
+            solutionPanel.classList.remove('active');
+        }
+        if (revealBtn) {
+            revealBtn.hidden = true;
+            revealBtn.setAttribute('aria-expanded', 'false');
         }
     }
 
-    function showValidation(msg, isError = true) {
-        if (validationMessage) {
-            validationMessage.textContent = msg;
-            validationMessage.style.display = 'block';
-            validationMessage.style.color = isError ? '#b91c1c' : '#15803d';
-            validationMessage.style.marginTop = '8px';
-            validationMessage.style.fontWeight = '600';
+    choices.forEach(choice => choice.addEventListener('change', () => {
+        concealSolution();
+        message('');
+    }));
+    if (reasoningInput) reasoningInput.addEventListener('input', () => {
+        concealSolution();
+        message('');
+    });
+
+    if (hintBtn && hintPanel) hintBtn.addEventListener('click', () => {
+        const expanded = hintPanel.classList.toggle('active');
+        hintBtn.setAttribute('aria-expanded', String(expanded));
+        hintBtn.textContent = expanded ? 'Hide Physical Hint' : 'Show Physical Hint';
+    });
+
+    if (submitBtn) submitBtn.addEventListener('click', () => {
+        concealSolution();
+        const choice = choices.find(c => c.checked);
+        if (!choice) { message('Please select an answer option first.'); return; }
+        const reasoning = reasoningInput ? reasoningInput.value.trim() : '';
+        if (reasoning.length < 10) {
+            message('Attempt-length gate: Enter at least 10 characters to record an attempt. This is not a reasoning check.');
+            if (reasoningInput) reasoningInput.focus();
+            return;
         }
-    }
+        // Do not inspect, grade, or store the actual explanation.
+        try {
+            const stored = JSON.parse(sessionStorage.getItem('grade9_alpha_progress') || '{}');
+            stored.practiceAttempted = true;
+            stored.solutionViewed = false;
+            stored.selectedAnswer = choice.value;
+            stored.timestamp = new Date().toISOString();
+            delete stored.practiceCompleted;
+            sessionStorage.setItem('grade9_alpha_progress', JSON.stringify(stored));
+        } catch (e) { /* session storage may be disabled */ }
+        if (revealBtn) revealBtn.hidden = false;
+        message('Attempt recorded (length requirement met). Your explanation has not been automatically graded. Select “Reveal Worked Solution” to compare your approach.', false);
+    });
 
-    if (submitBtn) {
-        submitBtn.addEventListener('click', () => {
-            if (!selectedValue) {
-                showValidation('Please select an answer option first.');
-                return;
-            }
-
-            const reasoning = reasoningInput ? reasoningInput.value.trim() : '';
-            if (reasoning.length < 10) {
-                showValidation('Reasoning Gate: Please write your brief physical reasoning before submitting (minimum 10 characters).');
-                if (reasoningInput) reasoningInput.focus();
-                return;
-            }
-
-            // Valid submission: reveal worked solution
-            if (solutionPanel) {
-                solutionPanel.classList.add('active');
-            }
-
-            // Record completion in local sessionStorage
-            try {
-                const stored = JSON.parse(sessionStorage.getItem('grade9_alpha_progress') || '{}');
-                stored.practiceCompleted = true;
-                stored.selectedAnswer = selectedValue;
-                stored.timestamp = new Date().toISOString();
+    if (revealBtn && solutionPanel) revealBtn.addEventListener('click', () => {
+        if (revealBtn.hidden) return;
+        solutionPanel.hidden = false;
+        solutionPanel.classList.add('active');
+        revealBtn.setAttribute('aria-expanded', 'true');
+        try {
+            const stored = JSON.parse(sessionStorage.getItem('grade9_alpha_progress') || '{}');
+            if (stored.practiceAttempted) {
+                stored.solutionViewed = true;
                 sessionStorage.setItem('grade9_alpha_progress', JSON.stringify(stored));
-            } catch (e) {
-                // Ignore storage errors in restrictive environments
             }
-
-            if (selectedValue === 'correct') {
-                showValidation('Physical assertion verified! Mechanical Energy is conserved.', false);
-            } else {
-                showValidation('Review the worked derivation below to analyze the work-energy relations.', false);
-            }
-        });
-    }
+        } catch (e) { /* no persistent record required */ }
+    });
 }
 
 // Progress and Session Management
@@ -178,7 +171,7 @@ function initProgress() {
         } catch (e) {}
 
         const lessonVisited = !!progressData.wpeLessonVisited;
-        const practiceDone = !!progressData.practiceCompleted;
+        const practiceDone = !!progressData.practiceAttempted;
 
         const lessonStatusEl = document.getElementById('status-wpe-lesson');
         const practiceStatusEl = document.getElementById('status-wpe-practice');
@@ -190,15 +183,15 @@ function initProgress() {
         }
 
         if (practiceStatusEl) {
-            practiceStatusEl.textContent = practiceDone ? 'Submitted & Reviewed' : 'Not Started';
+            practiceStatusEl.textContent = practiceDone ? 'Attempt recorded (ungraded)' : 'Not Started';
             practiceStatusEl.className = practiceDone ? 'badge badge-active' : 'badge badge-hold';
         }
 
         if (summaryEl) {
             if (practiceDone && lessonVisited) {
-                summaryEl.textContent = 'Alpha Pilot WPE Module completed in current local session.';
+                summaryEl.textContent = 'Lesson visited and practice attempt recorded locally; no explanation was graded.';
             } else if (lessonVisited || practiceDone) {
-                summaryEl.textContent = 'Alpha Pilot WPE Module partially explored in current local session.';
+                summaryEl.textContent = 'Alpha Pilot WPE Module partially explored locally; no grading performed.';
             } else {
                 summaryEl.textContent = 'No local activity recorded in current session.';
             }

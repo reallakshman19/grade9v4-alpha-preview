@@ -19,7 +19,6 @@
                 <a href="practice.html">Interactive Practice</a>
                 <a href="progress.html">Session Progress</a>
                 <a href="alpha-board.html">Alpha Roadmap</a>
-                <a href="question-status.html">79 Question Records (Status)</a>
             </nav>
         </div>
     </header>
@@ -29,9 +28,9 @@
     </div>
 
     <main>
-        <div class="banner-disclosure" role="region" aria-label="Academic and Technical Disclaimer">
+                <div class="banner-disclosure" role="region" aria-label="Academic and Technical Disclaimer">
             <strong>SYNTHETIC ALPHA PREVIEW — Academic admission: 0. Official keys, figures, adapter qualification and student release remain pending.</strong>
-            PUBLIC DEMO PREVIEW · DEMO ONLY · NOT ACADEMICALLY ADMITTED. This public preview demonstrates offline-first client architecture, cognitive reasoning gates, and interactive physics representations. Mathematics and Chemistry modules remain in strict Draft / Hold. 0 examination candidates admitted. No academic approval inferred from software validation.
+            <div style="margin-top: 4px; font-size: 13px;">PUBLIC DEMO PREVIEW · DEMO ONLY · NOT ACADEMICALLY ADMITTED. Synthetic demonstration only; 0 examination candidates admitted. No academic approval inferred from software validation. Mathematics and Chemistry remain in Draft / Hold.</div>
         </div>
 
         <section class="card">
@@ -40,14 +39,8 @@
                 Grade9 v4.0 is an advanced agentic curriculum and learning platform targeting foundational physics, mathematics, and chemistry. This standalone static deployment demonstrates the interactive learner surface for the <strong>Physics Work-Power-Energy (WPE) Pilot</strong>.
             </p>
             <p>
-                Experience step-by-step cognitive scaffolding, physical turning-point simulations, explicit reasoning gates, and zero-leakage client-side state handling.
+                Experience step-by-step cognitive scaffolding, physical turning-point simulations, explicit attempt-length gates, and local session-state handling.
             </p>
-        </section>
-
-        <section class="card" aria-label="Question intake progress">
-            <h2>Where are the 79 questions?</h2>
-            <p>The original intake contains 79 private source records. The public tracker lists every record ID and its processing status: 60 WPE candidates triaged, five awaiting triage, eight bridge records, five out-of-scope records, and one provisional duplicate alias. None is academically admitted or published here as an original exam question.</p>
-            <p><a href="question-status.html" class="btn btn-secondary">Browse all 79 record statuses &rarr;</a></p>
         </section>
 
         <section class="grid-cards" aria-label="Available Modules">
@@ -69,7 +62,7 @@
                     <span class="badge badge-active">Interactive Trial</span>
                     <h3 style="margin: 12px 0 8px; font-size: 18px;">Interactive Practice Gate</h3>
                     <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 16px;">
-                        Engage in step-by-step problem solving with required pre-submission reasoning verification and worked physical derivations.
+                        Engage in step-by-step problem solving with a required ungraded attempt before an optional, separate worked-solution reveal.
                     </p>
                 </div>
                 <div>
@@ -119,22 +112,22 @@
                         <tr>
                             <td><strong>Offline Autonomy</strong></td>
                             <td>Zero external CDNs, fonts, or tracking scripts. Standalone DOM.</td>
-                            <td>Validated via static AST and CSP check</td>
+                            <td>Static forbidden-pattern and link scans; no CSP policy claimed</td>
                         </tr>
                         <tr>
                             <td><strong>Cognitive Gates</strong></td>
-                            <td>Reasoning must be formulated before viewing worked derivations.</td>
-                            <td>Client-side gate enforced in JS</td>
+                            <td>At least 10 characters required before a separate solution-reveal click; explanation is not graded.</td>
+                            <td>Client-side length check; no semantic grading</td>
                         </tr>
                         <tr>
                             <td><strong>Privacy Discipline</strong></td>
-                            <td>Learner inputs held in ephemeral sessionStorage; no remote leakage.</td>
-                            <td>Zero network payloads verified</td>
+                            <td>Only session flags and selected option are stored; explanation is not stored by app code.</td>
+                            <td>No fetch/XHR in app code; hosts may retain access logs/IPs</td>
                         </tr>
                         <tr>
                             <td><strong>Academic Boundary</strong></td>
-                            <td>Synthetic demonstration items only; zero authentic exam stems.</td>
-                            <td>Strict source isolation preserved</td>
+                            <td>Synthetic-designated demo items only; authenticity requires separate academic review.</td>
+                            <td>Static forbidden-token scan only; not an originality certification</td>
                         </tr>
                     </tbody>
                 </table>

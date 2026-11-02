@@ -1,4 +1,5 @@
-# Grade9 v4.0 — Synthetic Alpha Preview Robots Exclusion
-# Public preview site
+# Grade9 v4.0 — Synthetic Alpha Preview crawler policy
+# No crawler exclusion is currently requested; Owner indexing decision is pending.
+# robots.txt is advisory and does not control access.
 User-agent: *
 Allow: /

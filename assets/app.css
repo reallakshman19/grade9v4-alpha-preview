@@ -309,6 +309,23 @@ main {
     .btn-option.selected { background: #0c4a6e; color: #ffffff; }
 }
 
+/* Browser-native radio choices provide checked state and arrow-key navigation. */
+.practice-options { border: 0; min-width: 0; padding: 0; }
+.practice-options legend { font-size: 14px; font-weight: 600; margin-bottom: 10px; }
+.practice-options .btn-option { gap: 12px; }
+.practice-options input[type="radio"] { width: 20px; height: 20px; flex: 0 0 20px; accent-color: var(--accent); }
+.practice-options .btn-option:has(input:checked) { border-color: var(--accent); background: #e0f2fe; font-weight: 600; color: #142334; }
+.practice-options .btn-option:focus-within { outline: 3px solid var(--accent); outline-offset: 3px; }
+.practice-options .option-copy { min-width: 0; }
+[hidden] { display: none !important; }
+math { font-family: "Cambria Math", "STIX Two Math", "Noto Sans Math", serif; font-size: 1.08em; }
+.math-box { font-family: "Cambria Math", "STIX Two Math", "Noto Sans Math", serif; font-size: 16px; }
+/* Break long equation chains at relations without breaking fractions or symbols. */
+.equation-steps { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; min-width: 0; }
+.equation-steps math { white-space: nowrap; max-width: 100%; }
+.math-box math[display="block"] { display: block; min-width: max-content; }
+
+
 /* Interactive Slider */
 .slider-container {
     margin: 20px 0;
@@ -417,4 +434,21 @@ footer {
     text-align: center;
     font-size: 12px;
     color: var(--text-muted);
+}
+
+
+/* High-Fidelity Math Font Typography */
+math {
+    font-family: "Cambria Math", "STIX Two Math", "Noto Sans Math", "Latin Modern Math", serif;
+    font-size: 1.14em;
+}
+.math-box {
+    font-family: "Cambria Math", "STIX Two Math", "Noto Sans Math", "Latin Modern Math", serif;
+    font-size: 17px;
+}
+math mi {
+    font-style: italic;
+}
+math mo, math mn, math mtext {
+    font-style: normal;
 }
