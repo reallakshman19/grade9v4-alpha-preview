@@ -292,9 +292,52 @@
       "topicAdapter": "NO_APPROVED_SELECTED_ADAPTER",
       "evidence_map": "b08-source-gates.json",
       "notes": "Five in-scope tasks with source-gate dispositions; M69 factor evidence is mismatched to task. Scores are exposed proposals, not accepted classifications."
+    },
+    {
+      "id": "B09",
+      "order": 9,
+      "date": "2026-11-02",
+      "title": "Five physics reconstructions and source-gate repair candidates",
+      "status": "SYNTHETIC_REVIEW_WITH_SOURCE_LEADS",
+      "href": "b09-five-subtopics.html",
+      "count": 5,
+      "topics": [
+        {
+          "label": "Signed force–position area; four-graph source lead",
+          "record": "EX-M56",
+          "anchor": "m56"
+        },
+        {
+          "label": "Potential energy, turning points; missing curve lead",
+          "record": "EX-M61",
+          "anchor": "m61"
+        },
+        {
+          "label": "Constant-power kinematics; unscored SL2 mismatch repair",
+          "record": "EX-M69",
+          "anchor": "m69"
+        },
+        {
+          "label": "Spring compression with kinetic friction",
+          "record": "EX-M105",
+          "anchor": "m105"
+        },
+        {
+          "label": "Constant-force turning versus static equilibrium",
+          "record": "EX-M106",
+          "anchor": "m106"
+        }
+      ],
+      "nativeIntegration": "NOT_RUN",
+      "scienceReview": "PENDING",
+      "qrtStatus": "NO_NEW_INDEPENDENT_QRT_REVIEW",
+      "physicsBlueprint": "PHYS-QRT-BLUEPRINT 0.2.0 DRAFT_OWNER_REVIEW",
+      "topicAdapter": "NO_APPROVED_SELECTED_ADAPTER",
+      "evidence_map": "b09-corrective-evidence.json",
+      "notes": "Five distinct new synthetic physics examples; three third-party public figure-recovery links are unverified, M69 task-specific rubric explanations supplied only as unscored candidate; no native SL2 edits."
     }
   ],
   "archiveNote": "B01 figure-label repair is a private patch/test handoff, not a completed five-subtopic HTML batch and is not published here.",
-  "appendInstructions": "Append five source-backed cases, verified HTML, source pins and technical tests; update this catalogue so reader.html discovers new records. Distinguish synthetic lessons from exam review cases and preserve zero academic admissions.",
+  "appendInstructions": "Append exactly five bounded subtopics, qualified source leads, independent-reviewed pins if available, technical evidence and unqualified holds; the cumulative reader uses the manifest. Do not advertise candidate fixes as official exam custody.",
   "reader_href": "reader.html"
 }
