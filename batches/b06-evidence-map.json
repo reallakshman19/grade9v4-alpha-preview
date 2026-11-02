@@ -1,0 +1,276 @@
+{
+  "schema": "g9v4-wpe-source-to-qrt-batch-mapping/v1",
+  "created": "2026-11-02",
+  "batch": "B06",
+  "status": "CANDIDATE_ONLY__NO_APPROVAL",
+  "notes": "This is read-only evidence mapping. Neither an exact reviewed QRT classification nor an installed/approved WPE topic adapter is available for these five nodes; no operation or D band is assigned.",
+  "source_program": "WPE-SOURCE-PREPARATION-R2",
+  "blueprint": {
+    "repository": "reallakshman19/Grade9v4.0",
+    "path": "templates/physics-blueprint/physics-blueprint.D3-D4.json",
+    "git_blob_sha": "700dafcbe86d76442637bcf214eeb544497cf4ea",
+    "id": "PHYS-QRT-BLUEPRINT",
+    "version": "0.2.0",
+    "status": "DRAFT_OWNER_REVIEW",
+    "subject": "Physics",
+    "available_cells": 14,
+    "operations": [
+      "RETRIEVE",
+      "EXPLAIN",
+      "APPLY",
+      "MODEL",
+      "REPRESENT",
+      "SYNTHESIZE",
+      "JUSTIFY"
+    ],
+    "selected_cell": null,
+    "selection_reason": "No exact independently reviewed question/operation/band supplied. D3.1 paused."
+  },
+  "adapter": {
+    "expected_id": "PHYS-TOPIC-WPE",
+    "expected_topic": "WPE",
+    "selected_version": null,
+    "selected_blob": null,
+    "status": "NO_APPROVED_SELECTED_ADAPTER",
+    "target_binding": "PHYS-QRT-BLUEPRINT 0.2.0",
+    "source_notice": "docs/agent-entry/03-blueprint-adapters.md says multiple unequal-byte drafts and no selected merged adapter; root-draft checkout missing."
+  },
+  "qrt_requirements": [
+    "exact task identity and source record",
+    "native SL1 source and separate paper/key custody",
+    "SL2 operation/demand factor evidence",
+    "independent QRT operation/score/source-role decision",
+    "current Blueprint and chosen adapter pins",
+    "qualified Physics warrants",
+    "independent B1–B7 review"
+  ],
+  "counts": {
+    "nodes": 5,
+    "reviewed_qrt_joins": 0,
+    "qualified_warrants": 0,
+    "approved_native_lessons": 0,
+    "academically_admitted_questions": 0
+  },
+  "entries": [
+    {
+      "id": "WPE-N01",
+      "title": "Work, direction and signed contributions",
+      "github_blob_sha": "d51b0f90dc6a5a1bb38d4f6643a280fd95198614",
+      "source_path": "workspace/legacy/g9v3.5/chatgpt/output/WPE_Source_Core1A_Completion_R2_20261030/skill/source-to-core1a/examples/wpe-source-program/handoffs/WPE-N01.json",
+      "source_node_state": "CANDIDATE",
+      "claims": [
+        {
+          "id": "C1",
+          "qualification": "UNREVIEWED"
+        },
+        {
+          "id": "C2",
+          "qualification": "UNREVIEWED"
+        },
+        {
+          "id": "C3",
+          "qualification": "UNREVIEWED"
+        }
+      ],
+      "candidate_warrants": [
+        {
+          "id": "W-CANDIDATE",
+          "qualification": "CANDIDATE",
+          "gap": null
+        }
+      ],
+      "instructional_move": "Fix displacement and body first, then identify the signed force projection before forming the work ledger.",
+      "qrt_task_identity": null,
+      "qrt_join": "PENDING_REVIEWED_REQUIREMENT",
+      "blueprint_cell": null,
+      "adapter_binding": null,
+      "provisional_pedagogical_use_only": true,
+      "review": {
+        "semantic": "NOT_RUN",
+        "core2_owner_approval": "PENDING",
+        "core1a_authoring": "NOT_STARTED",
+        "core1b_correspondence": "NOT_RUN"
+      },
+      "page": "n01.html"
+    },
+    {
+      "id": "WPE-N02",
+      "title": "Variable-force work and the spring bridge",
+      "github_blob_sha": "341035ffbb7d121d8a121fc2f6e0024ce3748fb6",
+      "source_path": "workspace/legacy/g9v3.5/chatgpt/output/WPE_Source_Core1A_Completion_R2_20261030/skill/source-to-core1a/examples/wpe-source-program/handoffs/WPE-N02.json",
+      "source_node_state": "CANDIDATE",
+      "claims": [
+        {
+          "id": "C1",
+          "qualification": "UNREVIEWED"
+        },
+        {
+          "id": "C2",
+          "qualification": "UNREVIEWED"
+        },
+        {
+          "id": "C3",
+          "qualification": "UNREVIEWED"
+        }
+      ],
+      "candidate_warrants": [
+        {
+          "id": "W-CANDIDATE",
+          "qualification": "CANDIDATE",
+          "gap": null
+        },
+        {
+          "id": "W-GAP",
+          "qualification": "MISSING",
+          "gap": "No canonical variable-force integration or Hookean spring-work relation is bound in the pinned library."
+        }
+      ],
+      "instructional_move": "Partition the path into local signed force contributions and aggregate them with stated approximation/limit conditions.",
+      "qrt_task_identity": null,
+      "qrt_join": "PENDING_REVIEWED_REQUIREMENT",
+      "blueprint_cell": null,
+      "adapter_binding": null,
+      "provisional_pedagogical_use_only": true,
+      "review": {
+        "semantic": "NOT_RUN",
+        "core2_owner_approval": "PENDING",
+        "core1a_authoring": "NOT_STARTED",
+        "core1b_correspondence": "NOT_RUN"
+      },
+      "page": "n02.html"
+    },
+    {
+      "id": "WPE-N03",
+      "title": "Work–energy theorem and complete force accounting",
+      "github_blob_sha": "2490609cb293e3492ec0c5218c14e7d5489b0856",
+      "source_path": "workspace/legacy/g9v3.5/chatgpt/output/WPE_Source_Core1A_Completion_R2_20261030/skill/source-to-core1a/examples/wpe-source-program/handoffs/WPE-N03.json",
+      "source_node_state": "CANDIDATE",
+      "claims": [
+        {
+          "id": "C1",
+          "qualification": "UNREVIEWED"
+        },
+        {
+          "id": "C2",
+          "qualification": "UNREVIEWED"
+        },
+        {
+          "id": "C3",
+          "qualification": "UNREVIEWED"
+        }
+      ],
+      "candidate_warrants": [
+        {
+          "id": "W-CANDIDATE",
+          "qualification": "CANDIDATE",
+          "gap": null
+        }
+      ],
+      "instructional_move": "Close the complete force-work ledger for the same body before equating it to the kinetic-energy change.",
+      "qrt_task_identity": null,
+      "qrt_join": "PENDING_REVIEWED_REQUIREMENT",
+      "blueprint_cell": null,
+      "adapter_binding": null,
+      "provisional_pedagogical_use_only": true,
+      "review": {
+        "semantic": "NOT_RUN",
+        "core2_owner_approval": "PENDING",
+        "core1a_authoring": "NOT_STARTED",
+        "core1b_correspondence": "NOT_RUN"
+      },
+      "page": "n03.html"
+    },
+    {
+      "id": "WPE-N04",
+      "title": "Kinetic energy, momentum relation and frame",
+      "github_blob_sha": "054d728b8cbc5fe222ec4d2d5f622cd33a0022a0",
+      "source_path": "workspace/legacy/g9v3.5/chatgpt/output/WPE_Source_Core1A_Completion_R2_20261030/skill/source-to-core1a/examples/wpe-source-program/handoffs/WPE-N04.json",
+      "source_node_state": "CANDIDATE",
+      "claims": [
+        {
+          "id": "C1",
+          "qualification": "UNREVIEWED"
+        },
+        {
+          "id": "C2",
+          "qualification": "UNREVIEWED"
+        },
+        {
+          "id": "C3",
+          "qualification": "UNREVIEWED"
+        }
+      ],
+      "candidate_warrants": [
+        {
+          "id": "W-CANDIDATE",
+          "qualification": "CANDIDATE",
+          "gap": null
+        },
+        {
+          "id": "W-GAP",
+          "qualification": "MISSING",
+          "gap": "The pinned library has no separate momentum–kinetic-energy relation or developed momentum prerequisite record."
+        }
+      ],
+      "instructional_move": "State what is held fixed, then derive the dependency using the same mass and reference frame.",
+      "qrt_task_identity": null,
+      "qrt_join": "PENDING_REVIEWED_REQUIREMENT",
+      "blueprint_cell": null,
+      "adapter_binding": null,
+      "provisional_pedagogical_use_only": true,
+      "review": {
+        "semantic": "NOT_RUN",
+        "core2_owner_approval": "PENDING",
+        "core1a_authoring": "NOT_STARTED",
+        "core1b_correspondence": "NOT_RUN"
+      },
+      "page": "n04.html"
+    },
+    {
+      "id": "WPE-N09",
+      "title": "Friction work with body, frame and contact specified",
+      "github_blob_sha": "c79c403593fe3859b4fd6ba3f9a359952a9a8d7d",
+      "source_path": "workspace/legacy/g9v3.5/chatgpt/output/WPE_Source_Core1A_Completion_R2_20261030/skill/source-to-core1a/examples/wpe-source-program/handoffs/WPE-N09.json",
+      "source_node_state": "CANDIDATE",
+      "claims": [
+        {
+          "id": "C1",
+          "qualification": "UNREVIEWED"
+        },
+        {
+          "id": "C2",
+          "qualification": "UNREVIEWED"
+        },
+        {
+          "id": "C3",
+          "qualification": "UNREVIEWED"
+        }
+      ],
+      "candidate_warrants": [
+        {
+          "id": "W-CANDIDATE",
+          "qualification": "CANDIDATE",
+          "gap": null
+        },
+        {
+          "id": "W-GAP",
+          "qualification": "MISSING",
+          "gap": "No qualified friction constitutive/contact work relation exists in the selected canonical library."
+        }
+      ],
+      "instructional_move": "Determine friction direction from contact motion, then compute its work using the displacement of the selected force point in the declared frame.",
+      "qrt_task_identity": null,
+      "qrt_join": "PENDING_REVIEWED_REQUIREMENT",
+      "blueprint_cell": null,
+      "adapter_binding": null,
+      "provisional_pedagogical_use_only": true,
+      "review": {
+        "semantic": "NOT_RUN",
+        "core2_owner_approval": "PENDING",
+        "core1a_authoring": "NOT_STARTED",
+        "core1b_correspondence": "NOT_RUN"
+      },
+      "page": "n09.html"
+    }
+  ]
+}
