@@ -1,0 +1,55 @@
+{
+  "schema": "g9v4-wpe-batch-index/v1",
+  "updated": "2026-11-02",
+  "project": "Grade9 v4.0 — Physics Work, Power & Energy",
+  "context": "Public technical review of newly authored synthetic demonstrations, not a learner/content release.",
+  "academicAdmissions": 0,
+  "gates": {
+    "sourceRights": "NOT_ASSERTED_FOR_EXTERNAL_MATERIAL",
+    "scientificReview": "PENDING",
+    "core2NativeIntegration": "NOT_RUN",
+    "ownerAcademicAcceptance": "NOT_RECEIVED"
+  },
+  "batches": [
+    {
+      "id": "B02",
+      "order": 2,
+      "date": "2026-11-02",
+      "title": "Five Core2 representation subtopics",
+      "status": "SYNTHETIC_REVIEW",
+      "href": "b02-five-subtopics.html",
+      "count": 5,
+      "topics": [
+        {
+          "label": "Vector displacement and signed work",
+          "record": "TB-WPE-ILL-01",
+          "anchor": "ill01"
+        },
+        {
+          "label": "Tension, weight and net work",
+          "record": "TB-WPE-ILL-02",
+          "anchor": "ill02"
+        },
+        {
+          "label": "Work by a variable force",
+          "record": "TB-WPE-ILL-03",
+          "anchor": "ill03"
+        },
+        {
+          "label": "Instantaneous gravitational power on an incline",
+          "record": "TB-WPE-ILL-05",
+          "anchor": "ill05"
+        },
+        {
+          "label": "Radial and tangential contributions to power",
+          "record": "TB-WPE-ILL-06",
+          "anchor": "ill06"
+        }
+      ],
+      "nativeIntegration": "NOT_RUN",
+      "scienceReview": "PENDING"
+    }
+  ],
+  "archiveNote": "B01 figure-label repair is a private patch/test handoff, not a completed five-subtopic HTML batch and is not published here.",
+  "appendInstructions": "To append: create another verified synthetic HTML in batches/, add an entry to batches/batches.json, and confirm public HTTP fetch. Do not reuse status fields as academic approvals."
+}
