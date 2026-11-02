@@ -249,9 +249,52 @@
       "topicAdapter": "NO_APPROVED_SELECTED_ADAPTER",
       "evidence_map": "b07-qrt-evidence.json",
       "notes": "Five existing exact-task evidence cases, not five academically new lessons. Four independent APPLY/D2 demand records; one author-exposed operation dispute. All 0 admissions."
+    },
+    {
+      "id": "B08",
+      "order": 8,
+      "date": "2026-11-02",
+      "title": "Five WPE examination source and QRT evidence blockers",
+      "status": "SOURCE_REVIEW_HOLD",
+      "href": "b08-five-subtopics.html",
+      "count": 5,
+      "topics": [
+        {
+          "label": "M56 — four missing force–displacement graphs",
+          "record": "EX-M56",
+          "anchor": "exm56"
+        },
+        {
+          "label": "M61 — missing potential-energy curve",
+          "record": "EX-M61",
+          "anchor": "exm61"
+        },
+        {
+          "label": "M69 — original option graphs and mismatched SL2 rubric",
+          "record": "EX-M69",
+          "anchor": "exm69"
+        },
+        {
+          "label": "M105 — spring–friction question, pending key and QRT review",
+          "record": "EX-M105",
+          "anchor": "exm105"
+        },
+        {
+          "label": "M106 — pendulum model dispute and D3.4 WPE adapter gap",
+          "record": "EX-M106",
+          "anchor": "exm106"
+        }
+      ],
+      "nativeIntegration": "NOT_RUN",
+      "scienceReview": "PENDING",
+      "qrtStatus": "PROPOSALS_NOT_INDEPENDENTLY_REVIEWED",
+      "physicsBlueprint": "PHYS-QRT-BLUEPRINT 0.2.0 DRAFT_OWNER_REVIEW",
+      "topicAdapter": "NO_APPROVED_SELECTED_ADAPTER",
+      "evidence_map": "b08-source-gates.json",
+      "notes": "Five in-scope tasks with source-gate dispositions; M69 factor evidence is mismatched to task. Scores are exposed proposals, not accepted classifications."
     }
   ],
   "archiveNote": "B01 figure-label repair is a private patch/test handoff, not a completed five-subtopic HTML batch and is not published here.",
-  "appendInstructions": "Append a five-subtopic/case batch with exact evidence, separate source and academic status; update manifest and reader index. If an authoritative independent QRT decision or Owner adapter pin is absent, preserve HOLD.",
+  "appendInstructions": "Append five source-backed cases, verified HTML, source pins and technical tests; update this catalogue so reader.html discovers new records. Distinguish synthetic lessons from exam review cases and preserve zero academic admissions.",
   "reader_href": "reader.html"
 }
