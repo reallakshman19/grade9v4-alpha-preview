@@ -86,6 +86,44 @@
       ],
       "nativeIntegration": "NOT_RUN",
       "scienceReview": "PENDING"
+    },
+    {
+      "id": "B04",
+      "order": 4,
+      "date": "2026-11-02",
+      "title": "Five Core2 Conditions subtopics",
+      "status": "SYNTHETIC_REVIEW",
+      "href": "b04-five-subtopics.html",
+      "count": 5,
+      "topics": [
+        {
+          "label": "Fixed incline: work of gravity, friction and normal",
+          "record": "TB-WPE-ILL-04",
+          "anchor": "cond04"
+        },
+        {
+          "label": "Power with specified initial speed",
+          "record": "TB-WPE-ILL-05",
+          "anchor": "cond05"
+        },
+        {
+          "label": "Radial and tangential power",
+          "record": "TB-WPE-ILL-06",
+          "anchor": "cond06"
+        },
+        {
+          "label": "Chain energy and initial kinetic energy",
+          "record": "TB-WPE-ILL-11",
+          "anchor": "cond11"
+        },
+        {
+          "label": "Spring contact and detachment",
+          "record": "TB-WPE-ILL-12",
+          "anchor": "cond12"
+        }
+      ],
+      "nativeIntegration": "NOT_RUN",
+      "scienceReview": "PENDING"
     }
   ],
   "archiveNote": "B01 figure-label repair is a private patch/test handoff, not a completed five-subtopic HTML batch and is not published here.",
