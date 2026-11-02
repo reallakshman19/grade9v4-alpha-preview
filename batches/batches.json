@@ -48,8 +48,46 @@
       ],
       "nativeIntegration": "NOT_RUN",
       "scienceReview": "PENDING"
+    },
+    {
+      "id": "B03",
+      "order": 3,
+      "date": "2026-11-02",
+      "title": "Five Core2 representation and Conditions subtopics",
+      "status": "SYNTHETIC_REVIEW",
+      "href": "b03-five-subtopics.html",
+      "count": 5,
+      "topics": [
+        {
+          "label": "Distributed mass and energy accounting",
+          "record": "TB-WPE-ILL-11",
+          "anchor": "ill11"
+        },
+        {
+          "label": "Potential energy landscape and turning points",
+          "record": "WEP07-03",
+          "anchor": "wep07"
+        },
+        {
+          "label": "Constant-force formula applicability",
+          "record": "TB-WPE-ILL-01",
+          "anchor": "cond01"
+        },
+        {
+          "label": "Tension model and complete force account",
+          "record": "TB-WPE-ILL-02",
+          "anchor": "cond02"
+        },
+        {
+          "label": "Signed integration bounds for variable force",
+          "record": "TB-WPE-ILL-03",
+          "anchor": "cond03"
+        }
+      ],
+      "nativeIntegration": "NOT_RUN",
+      "scienceReview": "PENDING"
     }
   ],
   "archiveNote": "B01 figure-label repair is a private patch/test handoff, not a completed five-subtopic HTML batch and is not published here.",
-  "appendInstructions": "To append: create another verified synthetic HTML in batches/, add an entry to batches/batches.json, and confirm public HTTP fetch. Do not reuse status fields as academic approvals."
+  "appendInstructions": "Append exactly one verified five-subtopic synthetic review page per batch under batches/, then add a manifest entry; preserve previous page URLs. Public batches do not grant academic admission or native integration."
 }
