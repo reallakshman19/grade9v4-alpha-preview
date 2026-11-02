@@ -206,9 +206,52 @@
       "topicAdapter": "NO_APPROVED_SELECTED_ADAPTER",
       "evidence_map": "b06-evidence-map.json",
       "notes": "All five are authored synthetic construction candidates. No exact reviewed SL2/QRT question join, no selected WPE adapter, and no B1–B7 qualification."
+    },
+    {
+      "id": "B07",
+      "order": 7,
+      "date": "2026-11-02",
+      "title": "Five exact-task QRT/Blueprint/adapter disposition reviews",
+      "status": "EVIDENCE_RECONCILIATION_HOLD",
+      "href": "b07-five-subtopics.html",
+      "count": 5,
+      "topics": [
+        {
+          "label": "M62 — reviewed D2 net power, no hard-cell promotion",
+          "record": "EX-M62",
+          "anchor": "m62"
+        },
+        {
+          "label": "M73 — reviewed D2 lifting-work conditions",
+          "record": "EX-M73",
+          "anchor": "m73"
+        },
+        {
+          "label": "M101 — reviewed D2 spring-controlled variables",
+          "record": "EX-M101",
+          "anchor": "m101"
+        },
+        {
+          "label": "WEP07-03 — reviewed D2 NSEP multiple-correct",
+          "record": "WEP07-03",
+          "anchor": "wep07"
+        },
+        {
+          "label": "M79 — APPLY versus SYNTHESIZE unreviewed",
+          "record": "EX-M79",
+          "anchor": "m79"
+        }
+      ],
+      "nativeIntegration": "NOT_RUN",
+      "scienceReview": "PENDING_ADMISSION_REVIEW",
+      "qrtStatus": "FOUR_INDEPENDENT_D2_FIRST_PASS_ONE_CONTESTED",
+      "physicsBlueprint": "PHYS-QRT-BLUEPRINT 0.2.0 DRAFT_OWNER_REVIEW",
+      "topicAdapter": "NO_APPROVED_SELECTED_ADAPTER",
+      "evidence_map": "b07-qrt-evidence.json",
+      "notes": "Five existing exact-task evidence cases, not five academically new lessons. Four independent APPLY/D2 demand records; one author-exposed operation dispute. All 0 admissions."
     }
   ],
   "archiveNote": "B01 figure-label repair is a private patch/test handoff, not a completed five-subtopic HTML batch and is not published here.",
-  "appendInstructions": "New batch: create five source-bound synthetic topic pages and evidence map, commit index and update this manifest. reader.html merges them into a cumulative review view automatically. Never infer academic approval from rendered pages.",
+  "appendInstructions": "Append a five-subtopic/case batch with exact evidence, separate source and academic status; update manifest and reader index. If an authoritative independent QRT decision or Owner adapter pin is absent, preserve HOLD.",
   "reader_href": "reader.html"
 }
