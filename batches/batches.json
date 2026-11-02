@@ -124,8 +124,47 @@
       ],
       "nativeIntegration": "NOT_RUN",
       "scienceReview": "PENDING"
+    },
+    {
+      "id": "B05",
+      "order": 5,
+      "date": "2026-11-02",
+      "title": "WPE Conditions closure candidate and four Core1A construction bridges",
+      "status": "SYNTHETIC_REVIEW",
+      "href": "b05-five-subtopics.html",
+      "count": 5,
+      "topics": [
+        {
+          "label": "Potential-energy curve and allowed motion",
+          "record": "WEP07-03",
+          "anchor": "cond07"
+        },
+        {
+          "label": "Conservative work and path independence",
+          "record": "WPE-N05",
+          "anchor": "n05"
+        },
+        {
+          "label": "Gravitational potential zero and ΔU",
+          "record": "WPE-N06",
+          "anchor": "n06"
+        },
+        {
+          "label": "Force–potential gradient: missing warrant",
+          "record": "WPE-N07",
+          "anchor": "n07"
+        },
+        {
+          "label": "Complete mechanical-energy transfer ledger",
+          "record": "WPE-N08",
+          "anchor": "n08"
+        }
+      ],
+      "nativeIntegration": "NOT_RUN",
+      "scienceReview": "PENDING",
+      "notes": "Contains exactly one R3 Conditions finding candidate; N05–N08 are unqualified source-to-Core1A construction examples."
     }
   ],
   "archiveNote": "B01 figure-label repair is a private patch/test handoff, not a completed five-subtopic HTML batch and is not published here.",
-  "appendInstructions": "Append exactly one verified five-subtopic synthetic review page per batch under batches/, then add a manifest entry; preserve previous page URLs. Public batches do not grant academic admission or native integration."
+  "appendInstructions": "Append each future five-subtopic batch as a new HTML page and a manifest entry; preserve previous permanent URLs. All academic gate statuses are independent of public web availability."
 }
